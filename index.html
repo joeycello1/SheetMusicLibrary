@@ -1,0 +1,606 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Music Dashboard</title>
+
+  <base target="_top">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --bg: #121212;
+      --card: #1b183a57;
+      --text: #b1c2eb;
+      --accent: #7394f6;
+      --meta: #cfe0f8;
+      --border: #e0ddd533;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      align-items: stretch;
+    }
+
+    .card {
+      display: flex;
+      flex-direction: column;
+      background: var(--card);
+      border-radius: 12px;
+      border: 1px solid var(--border);
+      position: relative;
+      overflow: hidden;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+      background: #2f2b7e;
+    }
+
+    .title-link {
+      text-decoration: none;
+      color: var(--accent);
+      font-weight: bold;
+      transition: opacity 0.2s;
+    }
+
+    .title-link:hover {
+      text-decoration: underline;
+      opacity: 0.8;
+    }
+
+    .card-content {
+      padding: 15px;
+      flex-grow: 1;
+      
+    }
+
+    .card h3 {
+      margin: 0 0 8px 0;
+      line-height: 1.3;
+    }
+
+    .meta {
+      font-size: 0.8rem;
+      color: var(--meta);
+      margin-bottom: 12px;
+    }
+
+    .summary {
+      font-size: 0.9rem;
+      line-height: 1.5;
+      color: #ccc;
+    }
+
+    .card-media {
+      padding: 0 15px 15px 15px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    #folderSelect {
+      width: 30%;
+      margin-bottom: 20px;
+      background: #1b183a57;
+    
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+
+      background-color: #1b183a57;
+      color: #8487ad;
+      border: 1px solid #4f57a6;
+      padding: 10px 34px 10px 10px; /* extra right padding for arrow */
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease;
+
+      background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none'%3E%3Cpath d='M7 9l5 5 5-5' stroke='%23cfd3ff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: right 10px center;
+      background-size: 16px 16px;
+    }
+
+    #folderSelect:hover {
+      background-color: #2f2c6f;
+      border-color: #7a82ff;
+    }
+
+    #folderSelect option {
+      background-color: #1b183a;
+      color: #ffffff;
+    }
+
+    .viewer-panel {
+      position: fixed;
+      top: 0;
+      right: 0;
+      width: 420px;
+      height: 100%;
+      background: #1b183a;
+      border-left: 1px solid var(--border);
+      padding: 20px;
+      overflow-y: auto;
+      transform: translateX(100%);
+      transition: transform 0.3s ease;
+      z-index: 999;
+    }
+
+    .viewer-panel.visible {
+      transform: translateX(0);
+    }
+
+    .viewer-panel.hidden {
+      transform: translateX(100%);
+    }
+
+    .viewer-close {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background: #00000055;
+      border: none;
+      color: white;
+      font-size: 24px;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      cursor: pointer;
+    }
+
+    .viewer-close:hover {
+      background: #ff4d4d;
+    }
+
+    .viewer-panel iframe {
+      width: 100%;
+      height: 85vh; /* fills most of the panel height */
+      border: none;
+      margin-top: 12px;
+      border-radius: 6px;
+    }
+    
+    .pdf-viewport {
+      width: 100%;
+      aspect-ratio: 1 / 1.3; /* tall like sheet music */
+      overflow: hidden;
+      border-radius: 6px;
+      box-shadow: 0 0 12px rgba(0,0,0,0.4);
+      margin-top: 12px;
+      position: relative;
+    }
+
+    .pdf-viewport iframe {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 1 / 1.3;
+      border: none;
+      transform: scale(1.0);
+      transform-origin: top left;
+    }
+
+    .viewer-panel iframe.youtube-embed {
+      height: 240px;        /* or 300px, or 360px — your choice */
+      aspect-ratio: 16 / 9;
+    }
+
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: var(--meta);
+    }
+  </style>
+</head>
+
+<body>
+  <h1></h1>
+  
+
+<!-- SEARCH BAR -->
+<input 
+  id="searchInput" 
+  type="text" 
+  placeholder="Search titles…" 
+  style="
+    width: 30%;
+    padding: 10px 14px;
+    margin: 15px 0;
+    border-radius: 8px;
+    border: 1px solid #4f57a6;
+    background: #1b183a57;
+    color: #e0e0e0;
+    font-size: 1rem;
+  "
+  oninput="applySearch()"
+/>
+
+<!-- FOLDER LIST -->
+<select 
+  id="folderSelect" 
+  onchange="selectFolder(this.value)"></select>
+<div id="loading" class="loading">Choose a folder or search.</div>
+
+<!-- GRID -->
+<div class="grid" id="musicGrid"></div>
+
+<!-- SIDEPANEL -->
+<div id="viewerPanel" class="viewer-panel hidden">
+  <button class="viewer-close" onclick="closeViewer()">×</button>
+  <div id="viewerContent"></div>
+</div>
+
+  <script>
+    let allData = [];
+    let folders = [];
+    let currentFolder = "";
+    let currentSearch = "";
+
+    // --- YouTube helpers ---
+    function isYouTube(url) {
+      if (!url) return false;
+      return url.includes('youtube.com') || url.includes('youtu.be');
+    }
+
+    function normalizeRecord(item) {
+      return {
+        ID: item.id,
+        Title: item.name.replace(/\.pdf$/i, ""),
+        PDF: `https://drive.google.com/file/d/${item.id}/preview`,
+        Folder: item.folder.replace(/^Sheet Music\s*\/\s*/i, ""),
+        Pages: item.pages,
+        YouTube: item.youtube,
+        Composer: "",   // no data yet
+        Tags: ""        // no data yet
+      };
+    }
+
+    function buildFolderIndex(data) {
+      allData = data;
+
+      folders = [...new Set(data.map(item => item.Folder))].sort();
+
+      renderFolderList();
+
+      currentFolder = "";
+      document.getElementById("musicGrid").innerHTML = "";
+      document.getElementById("loading").textContent = "Choose a folder or search.";
+    }
+
+    function renderFolderList() {
+     const select = document.getElementById("folderSelect");
+
+      select.innerHTML = `
+        <option value="">— Select a folder —</option>
+      ` + folders.map(folder => `
+        <option value="${folder}">
+        ${folder}
+      </option>
+     `).join("");
+    }
+
+    function selectFolder(folder) {
+      currentFolder = folder;
+      currentSearch = "";
+      document.getElementById("searchInput").value = "";
+
+      if (!folder) {
+        // User selected the placeholder
+        document.getElementById("musicGrid").innerHTML = "";
+        document.getElementById("loading").textContent = "Choose a folder or search.";
+        return;
+      }
+
+      loadFolder(folder);
+    }
+
+
+    function loadFolder(folder) {
+      const filtered = allData.filter(item => item.Folder === folder);
+      document.getElementById("loading").style.display = "none";
+      renderLibrary(filtered);
+    }
+    
+    function applySearch() {
+      currentSearch = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      // If search is empty
+      if (currentSearch === "") {
+        if (currentFolder) {
+          loadFolder(currentFolder);
+        } else {
+          document.getElementById("musicGrid").innerHTML = "";
+          document.getElementById("loading").textContent = "Choose a folder or search.";
+        }
+        return;
+      }
+
+      // 1. Exact phrase match
+      let matches = allData.filter(item =>
+        item.Title.toLowerCase().includes(currentSearch)
+      );
+
+      // 2. If no exact phrase match, fall back to "all words must match"
+      if (matches.length === 0) {
+        const words = currentSearch.split(/\s+/);
+        matches = allData.filter(item =>
+          words.every(w => item.Title.toLowerCase().includes(w))
+        );
+      }
+
+      // Grouping logic you already added
+      const grouped = groupByTitle(matches);
+      const sortedGroups = Object.values(grouped).sort((a, b) =>
+        a[0].Title.localeCompare(b[0].Title)
+      );
+      const flattened = sortedGroups.flat();
+
+      document.getElementById("loading").style.display = "none";
+      renderLibrary(flattened);
+    }
+
+
+    function groupByTitle(items) {
+      const groups = {};
+
+      items.forEach(item => {
+        const key = item.Title.toLowerCase(); // normalize
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(item);
+      });
+
+      return groups;
+    }
+    
+
+
+    // --- Render library ---
+    function renderLibrary(data) {
+      const filtered = data;
+
+      const grid = document.getElementById("musicGrid");
+      const loading = document.getElementById("loading");
+
+      if (filtered.length === 0) {
+        loading.textContent = "No music found.";
+        return;
+      }
+
+      loading.style.display = "none";
+
+      grid.innerHTML = filtered.map(item => {
+        const pdf = item.PDF || "";
+        const yt = item.YouTube || "";
+        const isVideo = isYouTube(yt);
+
+        const title = item.Title || "Untitled";
+        const composer = item.Composer || "";
+        const tags = item.Tags || "";
+        const folder = item.Folder || "";
+        const pages = item.Pages || "";
+
+       return `
+      <div class="card" data-id="${item.ID}" onclick="openViewer('${item.ID}', event)">
+        <div class="card-content">
+          <h3>${title}</h3>
+
+          <div class="meta">
+            ${composer ? `Composer: ${composer}<br>` : ""}
+            ${tags ? `Tags: ${tags}<br>` : ""}
+            ${folder ? `Folder: ${folder}<br>` : ""}
+            ${pages ? `Pages: ${pages}` : ""}
+          </div>
+        </div>
+
+        <div class="card-media">
+          <!--${pdf ? `<a href="${pdf}" target="_blank" class="title-link">Open PDF</a>` : ""}
+          ${yt ? `<a href="${yt}" target="_blank" class="title-link">YouTube Link</a>` : ""} -->
+        </div>
+      </div>`;
+
+      }).join("");
+    }
+
+    function openViewer(id, event) {
+      if (event) event.stopPropagation();
+
+      const item = allData.find(x => x.ID === id);
+      if (!item) return;
+
+      const panel = document.getElementById("viewerPanel");
+      const content = document.getElementById("viewerContent");
+
+      const pdf = item.PDF;
+      const yt = item.YouTube;
+      const ytId = yt ? extractYouTubeId(yt) : "";
+
+      let html = `
+        <h2>${item.Title}</h2>
+
+        <div class="meta">
+          ${item.Folder ? `Folder: ${item.Folder}` : ""}
+          ${item.Pages ? ` — Pages: ${item.Pages}` : ""}
+        </div>
+      `;
+
+      // PDF preview (first page only)
+      if (pdf) {
+        html += `
+          <div class="pdf-viewport">
+            <iframe src="${pdf}"></iframe>
+          </div>
+        `;
+      }
+
+      // YouTube embed (with fallback)
+      if (yt && ytId) {
+        html += `
+          <h3 style="margin-top: 20px;">YouTube</h3>
+
+          <div id="yt-container-${id}" style="position:relative;">
+            <iframe
+              id="yt-iframe-${id}"
+              class="youtube-embed"
+              src="https://www.youtube-nocookie.com/embed/${ytId}"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowfullscreen
+            ></iframe>
+          </div>
+        `;
+      }
+
+      // Fallback if no preview exists
+      if (!pdf && !yt) {
+        html += `
+          <p style="margin-top: 20px; color: #ccc;">
+            No preview available for this item.
+          </p>
+        `;
+      }
+
+      content.innerHTML = html;
+      if (yt && ytId) {
+        detectYouTubeFailure(id, ytId, yt);
+      }
+      
+      panel.classList.remove("hidden");
+      panel.classList.add("visible");
+    }
+
+    function detectYouTubeFailure(id, ytId, ytUrl) {
+      const iframe = document.getElementById(`yt-iframe-${id}`);
+      if (!iframe) return;
+
+      // Give YouTube time to load or fail
+      setTimeout(() => {
+        const height = iframe.clientHeight;
+
+        // Real YouTube player is usually > 200px tall
+        const looksBlocked = height < 200;
+
+        if (looksBlocked) {
+          showYouTubeFallback(id, ytId, ytUrl);
+        }
+      }, 800); // 0.8s is enough for all cases
+    }
+
+    function checkYouTubeEmbed(id, ytId, ytUrl) {
+      const iframe = document.getElementById(`yt-iframe-${id}`);
+      if (!iframe) return;
+
+      const expected = `https://www.youtube-nocookie.com/embed/${ytId}`;
+
+      // Give YouTube time to redirect if embedding is blocked
+      setTimeout(() => {
+        const actual = iframe.src;
+
+        // If the iframe was redirected → embedding is blocked
+        if (!actual.startsWith(expected)) {
+          showYouTubeFallback(id, ytId, ytUrl);
+        }
+      }, 300);
+    }
+
+    function showYouTubeFallback(id, ytId, ytUrl) {
+      const container = document.getElementById(`yt-container-${id}`);
+      if (!container) return;
+
+      const thumb = getYouTubeThumbnail(ytId);
+
+      container.innerHTML = `
+        <div style="text-align:center; margin-top: 10px;">
+          <img 
+            src="${thumb}" 
+            alt="YouTube thumbnail"
+            style="width:100%; border-radius:6px; margin-bottom:12px;"
+          />
+
+          <a 
+            href="${ytUrl}" 
+            target="_blank"
+            style="
+              display:inline-block;
+              padding:10px 16px;
+              background:#ff0000;
+              color:white;
+              border-radius:6px;
+              text-decoration:none;
+              font-weight:bold;
+            "
+          >
+            Watch on YouTube
+          </a>
+
+          <p style="color:#ccc; margin-top:8px; font-size:0.9rem;">
+            Embedding disabled by uploader
+          </p>
+        </div>
+      `;
+    }
+
+    function closeViewer() {
+      const panel = document.getElementById("viewerPanel");
+      panel.classList.remove("visible");
+      panel.classList.add("hidden");
+    }
+
+    function extractYouTubeId(url) {
+      try {
+        if (url.includes("v=")) return url.split("v=")[1].split("&")[0];
+        if (url.includes("youtu.be/")) return url.split("youtu.be/")[1].split("?")[0];
+        if (url.includes("embed/")) return url.split("embed/")[1].split("?")[0];
+      } catch (e) {}
+      return "";
+    }
+
+    // --- Call Apps Script backend ---
+    async function loadLibrary() {
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxL-VFweXa1M4LNkqCPleLmxk5LuaHV6JEVF7B7MVQS1xQDYhptaTHpNxe5A0r8SU27FQ/exec";
+
+      try {
+      const response = await fetch(WEB_APP_URL);
+      const data = await response.json();
+
+      const normalized = data.map(normalizeRecord);
+      buildFolderIndex(normalized);
+
+    } catch (err) {
+      console.error("Failed to load library:", err);
+      document.getElementById("loading").textContent = "Error loading library.";
+    }
+  }
+    function getYouTubeThumbnail(id) {
+      return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+
+    loadLibrary();
+
+    document.addEventListener("click", function (e) {
+      const panel = document.getElementById("viewerPanel");
+
+      // If panel is not open, do nothing
+      if (!panel.classList.contains("visible")) return;
+
+      // If the click is inside the panel, do nothing
+      if (panel.contains(e.target)) return;
+
+      // Otherwise, close the panel
+      closeViewer();
+    });
+
+  </script>
+</body>
+</html>
