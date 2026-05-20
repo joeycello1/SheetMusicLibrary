@@ -258,7 +258,7 @@
     function normalizeRecord(item) {
       return {
         ID: item.id,
-        Title: item.name.replace(/\.pdf$/i, ""),
+        Title: item.name.replace(/\.pdf$/i, "").replaceAll('-', ' '),
         PDF: `https://drive.google.com/file/d/${item.id}/preview`,
         Folder: item.folder.replace(/^Sheet Music\s*\/\s*/i, ""),
         Pages: item.pages,
