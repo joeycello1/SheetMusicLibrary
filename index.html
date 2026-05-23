@@ -387,7 +387,7 @@
         const isVideo = isYouTube(yt);
 
         const title = item.Title || "Untitled";
-        const composer = item.Composer || "";
+        const artist = item.Artist || "";
         const tags = item.Tags || "";
         const folder = item.Folder || "";
         const pages = item.Pages || "";
@@ -398,7 +398,7 @@
           <h3>${title}</h3>
 
           <div class="meta">
-            ${composer ? `Composer: ${composer}<br>` : ""}
+            ${artist ? `Artist: ${artist}<br>` : ""}
             ${tags ? `Tags: ${tags}<br>` : ""}
             ${folder ? `Folder: ${folder}<br>` : ""}
             ${pages ? `Pages: ${pages}` : ""}
@@ -431,6 +431,7 @@
         <h2>${item.Title}</h2>
 
         <div class="meta">
+          ${item.Artist ? `Artist: ${item.Artist}` : ""}
           ${item.Folder ? `Folder: ${item.Folder}` : ""}
           ${item.Pages ? ` — Pages: ${item.Pages}` : ""}
         </div>
