@@ -263,7 +263,7 @@
         Folder: item.folder.replace(/^Sheet Music\s*\/\s*/i, ""),
         Pages: item.pages,
         YouTube: item.youtube,
-        Artist: item.artist,
+        Artist: item.Artist || item.artist || "",
         Tags: ""        // no data yet
       };
     }
