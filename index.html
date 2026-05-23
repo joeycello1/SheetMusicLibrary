@@ -257,14 +257,14 @@
 
     function normalizeRecord(item) {
       return {
-        ID: item.id,
-        Title: item.name.replace(/\.pdf$/i, "").replaceAll('-', ' '),
-        PDF: `https://drive.google.com/file/d/${item.id}/preview`,
-        Folder: item.folder.replace(/^Sheet Music\s*\/\s*/i, ""),
-        Pages: item.pages,
-        YouTube: item.youtube,
-        Artist: item.Artist || item.artist || "",
-        Tags: ""        // no data yet
+        id: item.id || "",
+        title: (item.title || "Untitled").replace(/\.pdf$/i, "").replaceAll('-', ' '),
+        pdf: `https://drive.google.com/file/d/${item.id}/preview`,
+        folder: (item.folder || "").replace(/^Sheet Music\s*\/\s*/i, ""),
+        pages: item.pages || "",
+        youtube: item.youtube || "",
+        artist: item.artist || "",
+        tags: "" 
       };
     }
 
@@ -309,7 +309,7 @@
 
 
     function loadFolder(folder) {
-      const filtered = allData.filter(item => item.Folder === folder);
+      const filtered = allData.filter(item => item.folder === folder); // item.Folder -> item.folder
       document.getElementById("loading").style.display = "none";
       renderLibrary(filtered);
     }
@@ -329,23 +329,17 @@
       }
 
       // 1. Exact phrase match
-      let matches = allData.filter(item =>
-        item.Title.toLowerCase().includes(currentSearch)
-      );
+      let matches = allData.filter(item => item.title.toLowerCase().includes(currentSearch));
 
       // 2. If no exact phrase match, fall back to "all words must match"
       if (matches.length === 0) {
         const words = currentSearch.split(/\s+/);
-        matches = allData.filter(item =>
-          words.every(w => item.Title.toLowerCase().includes(w))
-        );
+        matches = allData.filter(item => words.every(w => item.title.toLowerCase().includes(w)));
       }
 
       // Grouping logic you already added
       const grouped = groupByTitle(matches);
-      const sortedGroups = Object.values(grouped).sort((a, b) =>
-        a[0].Title.localeCompare(b[0].Title)
-      );
+      const sortedGroups = Object.values(grouped).sort((a, b) => a[0].title.localeCompare(b[0].title));
       const flattened = sortedGroups.flat();
 
       document.getElementById("loading").style.display = "none";
@@ -355,13 +349,11 @@
 
     function groupByTitle(items) {
       const groups = {};
-
       items.forEach(item => {
-        const key = item.Title.toLowerCase(); // normalize
+        const key = item.title.toLowerCase(); // item.Title -> item.title
         if (!groups[key]) groups[key] = [];
         groups[key].push(item);
       });
-
       return groups;
     }
     
@@ -382,54 +374,48 @@
       loading.style.display = "none";
 
       grid.innerHTML = filtered.map(item => {
-        const pdf = item.PDF || "";
-        const yt = item.YouTube || "";
+        const pdf = item.pdf || "";
+        const yt = item.youtube || "";
         const isVideo = isYouTube(yt);
+        const title = item.title || "Untitled";
+        const artist = item.artist || "";
+        const folder = item.folder || "";
+        const pages = item.pages || "";
 
-        const title = item.Title || "Untitled";
-        const artist = item.Artist || item.artist || item.ArtistName || "";
-        const tags = item.Tags || "";
-        const folder = item.Folder || "";
-        const pages = item.Pages || "";
-
-       return `
-      <div class="card" data-id="${item.ID}" onclick="openViewer('${item.ID}', event)">
-        <div class="card-content">
-          <h3>${title}</h3>
-
-          <div class="meta">
-            ${artist ? `Artist: ${artist}<br>` : ""}
-            ${folder ? `Folder: ${folder}<br>` : ""}
-            ${pages ? `Pages: ${pages}` : ""}
-          </div>
-        </div>
-      </div>`;
-
+        return `
+          <div class="card" data-id="${item.id}" onclick="openViewer('${item.id}', event)">
+            <div class="card-content">
+              <h3>${title}</h3>
+              <div class="meta">
+                ${artist ? `Artist: ${artist}<br>` : ""}
+                ${folder ? `Folder: ${folder}<br>` : ""}
+                ${pages ? `Pages: ${pages}` : ""}
+              </div>
+            </div>
+          </div>`;
       }).join("");
     }
 
     function openViewer(id, event) {
       if (event) event.stopPropagation();
 
-      const item = allData.find(x => x.ID === id);
-      if (!item) return;
+      const item = allData.find(x => x.id === id); // x.ID -> x.id
+        if (!item) return;
 
-      const panel = document.getElementById("viewerPanel");
-      const content = document.getElementById("viewerContent");
+        const panel = document.getElementById("viewerPanel");
+        const content = document.getElementById("viewerContent");
+        const pdf = item.pdf;
+        const yt = item.youtube;
+        const ytId = yt ? extractYouTubeId(yt) : "";
 
-      const pdf = item.PDF;
-      const yt = item.YouTube;
-      const ytId = yt ? extractYouTubeId(yt) : "";
-
-      let html = `
-        <h2>${item.Title}</h2>
-
-        <div class="meta">
-          ${item.Artist ? `Artist: ${item.Artist}` : ""}
-          ${item.Folder ? `Folder: ${item.Folder}` : ""}
-          ${item.Pages ? ` — Pages: ${item.Pages}` : ""}
-        </div>
-      `;
+        let html = `
+          <h2>${item.title}</h2>
+          <div class="meta">
+            ${item.artist ? `Artist: ${item.artist}` : ""}
+            ${item.folder ? `Folder: ${item.folder}` : ""}
+            ${item.pages ? ` — Pages: ${item.pages}` : ""}
+          </div>
+        `;
 
       // PDF preview (first page only)
       if (pdf) {
