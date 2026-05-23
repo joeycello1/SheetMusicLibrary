@@ -419,9 +419,9 @@
         let html = `
           <h2>${item.title}</h2>
           <div class="meta">
-            ${item.artist ? `Artist: ${item.artist}` : ""}
-            ${item.folder ? `Folder: ${item.folder}` : ""}
-            ${item.pages ? ` — Pages: ${item.pages}` : ""}
+            ${item.artist ? `${item.artist}` : ""}
+            ${item.folder ? `|| category: ${item.folder}` : ""}
+            ${item.pages ? ` || ${item.pages} pages ` : ""}
           </div>
         `;
 
