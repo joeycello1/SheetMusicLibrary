@@ -387,7 +387,7 @@
         const isVideo = isYouTube(yt);
 
         const title = item.Title || "Untitled";
-        const artist = item.Artist || "";
+        const artist = item.Artist || item.artist || "";
         const tags = item.Tags || "";
         const folder = item.Folder || "";
         const pages = item.Pages || "";
