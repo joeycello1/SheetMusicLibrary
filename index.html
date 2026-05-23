@@ -395,9 +395,9 @@
             <div class="card-content">
               <h3>${title}</h3>
               <div class="meta">
-                ${artist ? `Artist: ${artist}<br>` : ""}
-                ${folder ? `Folder: ${folder}<br>` : ""}
-                ${pages ? `Pages: ${pages}` : ""}
+                ${artist ? `<h3>${artist}<br></h3>` : ""}
+                ${folder ? `category: ${folder}<br>` : ""}
+                ${pages ? `${pages} page(s)` : ""}
               </div>
             </div>
           </div>`;
@@ -421,7 +421,7 @@
           <div class="meta">
             ${item.artist ? `${item.artist}` : ""}
             ${item.folder ? `|| category: ${item.folder}` : ""}
-            ${item.pages ? ` || ${item.pages} pages ` : ""}
+            ${item.pages ? ` || ${item.pages} page(s) ` : ""}
           </div>
         `;
 
