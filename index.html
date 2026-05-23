@@ -257,7 +257,7 @@
 
     function normalizeRecord(item) {
       // Extract the raw ID from the network payload first
-      const fileId = item.id || ""; 
+      const fileId = item.id || item.ID || ""; 
 
       return {
         id: fileId,
