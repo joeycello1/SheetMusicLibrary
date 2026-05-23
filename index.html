@@ -214,7 +214,7 @@
 <input 
   id="searchInput" 
   type="text" 
-  placeholder="Search titles…" 
+  placeholder="Search files..." 
   style="
     width: 30%;
     padding: 10px 14px;
@@ -329,12 +329,20 @@
       }
 
       // 1. Exact phrase match
-      let matches = allData.filter(item => item.title.toLowerCase().includes(currentSearch));
+      let matches = allData.filter(item => 
+        item.title.toLowerCase().includes(currentSearch) || 
+        item.artist.toLowerCase().includes(currentSearch)
+      );
 
       // 2. If no exact phrase match, fall back to "all words must match"
       if (matches.length === 0) {
         const words = currentSearch.split(/\s+/);
-        matches = allData.filter(item => words.every(w => item.title.toLowerCase().includes(w)));
+        matches = allData.filter(item => 
+          words.every(w => 
+            item.title.toLowerCase().includes(w) ||
+            item.artist.toLowerCase().includes(w)
+          )
+        );
       }
 
       // Grouping logic you already added
