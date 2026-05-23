@@ -256,10 +256,13 @@
     }
 
     function normalizeRecord(item) {
+      // Extract the raw ID from the network payload first
+      const fileId = item.id || ""; 
+
       return {
-        id: item.id || "",
+        id: fileId,
         title: (item.title || "Untitled").replace(/\.pdf$/i, "").replaceAll('-', ' '),
-        pdf: `https://drive.google.com/file/d/${item.id}/preview`,
+        pdf: `https://drive.google.com/file/d/${fileId}/preview`, // 👈 Uses the clean local variable
         folder: (item.folder || "").replace(/^Sheet Music\s*\/\s*/i, ""),
         pages: item.pages || "",
         youtube: item.youtube || "",
@@ -270,11 +273,8 @@
 
     function buildFolderIndex(data) {
       allData = data;
-
-      folders = [...new Set(data.map(item => item.Folder))].sort();
-
+      folders = [...new Set(data.map(item => item.folder))].sort(); // 👈 Change to lowercase 'folder'
       renderFolderList();
-
       currentFolder = "";
       document.getElementById("musicGrid").innerHTML = "";
       document.getElementById("loading").textContent = "Choose a folder or search.";
