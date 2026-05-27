@@ -433,20 +433,37 @@
         </div>
       `;
     
-      // Audio player block (Native Element Workaround)
-        if (mp3Id && mp3Id.trim() !== "") {
-          const downloadUrl = `https://drive.google.com/uc?id=${mp3Id}&export=download`;
-          
-          html += `
-            <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
-              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
-              <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
-                <source src="${downloadUrl}" type="audio/mp3">
-                Your browser does not support the audio element.
-              </audio>
-            </div>
-          `;
-        }
+      // Audio player block (Native Browser Player via Safe Apps Script Runner)
+      if (mp3Id && mp3Id.trim() !== "") {
+        html += `
+          <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
+            <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
+            <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
+              <source id="audio-source-element" src="" type="audio/mpeg">
+              Your browser does not support the audio element.
+            </audio>
+          </div>
+        `;
+        
+        // Call the independent backend function asynchronously
+        google.script.run
+          .withSuccessHandler(function(base64Data) {
+            if (base64Data && !base64Data.startsWith("Error")) {
+              const player = document.getElementById("viewer-audio-player");
+              const source = document.getElementById("audio-source-element");
+              
+              // Stream the raw text string cleanly as a native audio source
+              source.src = "data:audio/mpeg;base64," + base64Data;
+              player.load();
+            } else {
+              console.error("Audio stream error from backend:", base64Data);
+            }
+          })
+          .withFailureHandler(function(err) {
+            console.error("Failed to connect to Apps Script audio runner:", err);
+          })
+          .streamMp3FromId(mp3Id); // Calls our specific function by name
+      }
     
       // PDF preview (first page only)
       if (pdf) {
