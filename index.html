@@ -426,68 +426,59 @@
           </div>
         `;
 
-      // Audio player
-        if (item.mp3) {
+        // PDF preview (first page only)
+        if (pdf) {
           html += `
-            <audio controls style="width: 100%; margin-top: 16px;">
-              <source src="https://drive.google.com/uc?export=download&id=${item.mp3}" type="audio/mpeg">
-            </audio>
+            <div class="pdf-viewport">
+              <iframe src="${pdf}"></iframe>
+            </div>
+            <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+              <a href="${pdf}" target="_blank" rel="noopener noreferrer" class="direct-drive-btn" style="
+                display: inline-block;
+                background-color: #2563eb;
+                color: white;
+                padding: 10px 20px;
+                text-decoration: none;
+                border-radius: 6px;
+                font-weight: 600;
+                font-size: 14px;
+                box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+                transition: background-color 0.2s;
+              " onmouseover="this.style.backgroundColor='#1d4ed8'" onmouseout="this.style.backgroundColor='#2563eb'">
+                Open Sheet Music in New Tab ↗
+              </a>
+            </div>
           `;
         }
-      
-      // PDF preview (first page only)
-      if (pdf) {
-        html += `
-          <div class="pdf-viewport">
-            <iframe src="${pdf}"></iframe>
-          </div>
-          <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
-            <a href="${pdf}" target="_blank" rel="noopener noreferrer" class="direct-drive-btn" style="
-              display: inline-block;
-              background-color: #2563eb;
-              color: white;
-              padding: 10px 20px;
-              text-decoration: none;
-              border-radius: 6px;
-              font-weight: 600;
-              font-size: 14px;
-              box-shadow: 0 4px 6px rgba(0,0,0,0.15);
-              transition: background-color 0.2s;
-            " onmouseover="this.style.backgroundColor='#1d4ed8'" onmouseout="this.style.backgroundColor='#2563eb'">
-              Open Sheet Music in New Tab ↗
-            </a>
-          </div>
-        `;
-      }
 
-      // YouTube embed (with fallback)
-      if (yt && ytId) {
-        html += `
-         <div id="yt-container-${id}" style="position:relative;">
-            <iframe
-              id="yt-iframe-${id}"
-              class="youtube-embed"
-              src="https://www.youtube-nocookie.com/embed/${ytId}"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-              allowfullscreen
-            ></iframe>
-          </div>
-        `;
-      }
+        // YouTube embed (with fallback)
+        if (yt && ytId) {
+          html += `
+          <div id="yt-container-${id}" style="position:relative;">
+              <iframe
+                id="yt-iframe-${id}"
+                class="youtube-embed"
+                src="https://www.youtube-nocookie.com/embed/${ytId}"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          `;
+        }
 
-      // Fallback if no preview exists
-      if (!pdf && !yt) {
-        html += `
-          <p style="margin-top: 20px; color: #ccc;">
-            No preview available for this item.
-          </p>
-        `;
-      }
+        // Fallback if no preview exists
+        if (!pdf && !yt) {
+          html += `
+            <p style="margin-top: 20px; color: #ccc;">
+              No preview available for this item.
+            </p>
+          `;
+        }
 
-      content.innerHTML = html;
-      if (yt && ytId) {
-        detectYouTubeFailure(id, ytId, yt);
-      }
+        content.innerHTML = html;
+        if (yt && ytId) {
+          detectYouTubeFailure(id, ytId, yt);
+        }
       
       panel.classList.remove("hidden");
       panel.classList.add("visible");
