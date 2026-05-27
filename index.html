@@ -433,20 +433,19 @@
         </div>
       `;
     
-      // Audio player block (CORS-friendly Iframe Player)
-      if (mp3Id && mp3Id.trim() !== "") {
-        // The preview URL handles authentication and cross-origin headers natively
-        const previewUrl = `https://drive.google.com/file/d/${mp3Id}/preview`;
-        
-        html += `
-          <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
-            <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
-            <div style="width: 100%; height: 60px; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb;">
-              <iframe src="${previewUrl}" width="100%" height="60px" style="border: none; margin-top: -30px;" allow="autoplay"></iframe>
+      // Audio player block (Natural Embedded Card View)
+        if (mp3Id && mp3Id.trim() !== "") {
+          const previewUrl = `https://drive.google.com/file/d/${mp3Id}/preview`;
+          
+          html += `
+            <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
+              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
+              <div style="width: 100%; height: 150px; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb; background-color: #1a1a1a;">
+                <iframe src="${previewUrl}" width="100%" height="150px" style="border: none; display: block;" allow="autoplay"></iframe>
+              </div>
             </div>
-          </div>
-        `;
-      }
+          `;
+        }
     
       // PDF preview (first page only)
       if (pdf) {
