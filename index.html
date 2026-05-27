@@ -433,37 +433,20 @@
         </div>
       `;
     
-      // Audio player block (Native Browser Player via Apps Script Proxy)
-      if (mp3Id && mp3Id.trim() !== "") {
-        html += `
-          <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
-            <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
-            <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
-              <source id="audio-source-element" src="" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-          </div>
-        `;
-        
-        // Fetch the audio stream asynchronously so it doesn't freeze the UI loading
-        google.script.run
-          .withSuccessHandler(function(base64Data) {
-            if (base64Data && !base64Data.startsWith("Error")) {
-              const player = document.getElementById("viewer-audio-player");
-              const source = document.getElementById("audio-source-element");
-              
-              // Convert the raw bytes to a browser-playable data URI
-              source.src = "data:audio/mpeg;base64," + base64Data;
-              player.load();
-            } else {
-              console.error("Failed to load audio stream:", base64Data);
-            }
-          })
-          .withFailureHandler(function(err) {
-            console.error("Apps Script audio fetch failed:", err);
-          })
-          .streamMp3FromId(mp3Id); // Calls our new backend function
-      }
+      // Audio player block (Native Element Workaround)
+        if (mp3Id && mp3Id.trim() !== "") {
+          const downloadUrl = `https://drive.google.com/uc?id=${mp3Id}&export=download`;
+          
+          html += `
+            <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
+              <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
+              <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
+                <source src="${downloadUrl}" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
+            </div>
+          `;
+        }
     
       // PDF preview (first page only)
       if (pdf) {
