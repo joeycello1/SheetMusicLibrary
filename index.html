@@ -410,6 +410,12 @@
     
       const item = allData.find(x => x.id === id); // x.ID -> x.id
       if (!item) return;
+
+      // 👇 ADD THESE LOGS TEMPORARILY
+      console.group(`🎵 Inspecting Item: "${item.title}"`);
+      console.log("Full item object payload:", item);
+      console.log("Extracted MP3 ID:", item.mp3);
+      console.groupEnd();
     
       const panel = document.getElementById("viewerPanel");
       const content = document.getElementById("viewerContent");
