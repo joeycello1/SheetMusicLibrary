@@ -433,16 +433,17 @@
         </div>
       `;
     
-      // Audio player block (Natural Embedded Card View)
+      // Audio player block (Native Element Workaround)
         if (mp3Id && mp3Id.trim() !== "") {
-          const previewUrl = `https://drive.google.com/file/d/${mp3Id}/preview`;
+          const downloadUrl = `https://drive.google.com/uc?id=${mp3Id}&export=download`;
           
           html += `
             <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
               <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
-              <div style="width: 100%; height: 150px; border-radius: 8px; overflow: hidden; border: 1px solid #e5e7eb; background-color: #1a1a1a;">
-                <iframe src="${previewUrl}" width="100%" height="150px" style="border: none; display: block;" allow="autoplay"></iframe>
-              </div>
+              <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
+                <source src="${downloadUrl}" type="audio/mp3">
+                Your browser does not support the audio element.
+              </audio>
             </div>
           `;
         }
