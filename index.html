@@ -410,12 +410,6 @@
     
       const item = allData.find(x => x.id === id); // x.ID -> x.id
       if (!item) return;
-
-      // 👇 ADD THESE LOGS TEMPORARILY
-      console.group(`🎵 Inspecting Item: "${item.title}"`);
-      console.log("Full item object payload:", item);
-      console.log("Extracted MP3 ID:", item.mp3);
-      console.groupEnd();
     
       const panel = document.getElementById("viewerPanel");
       const content = document.getElementById("viewerContent");
@@ -497,19 +491,44 @@
         `;
       }
 
-  // YouTube embed (with fallback)
+  // YouTube embed (OR button workaround if MP3 audio player is present)
   if (yt && ytId) {
-    html += `
-    <div id="yt-container-${id}" style="position:relative;">
-        <iframe
-          id="yt-iframe-${id}"
-          class="youtube-embed"
-          src="https://www.youtube-nocookie.com/embed/${ytId}"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        ></iframe>
-      </div>
-    `;
+    const hasMp3 = (mp3Id && mp3Id.trim() !== "");
+
+    if (hasMp3) {
+      // 1. Render a clean button if the audio player is already taking up space
+      html += `
+        <div class="yt-button-container" style="text-align: center; margin-top: 5px; margin-bottom: 20px;">
+          <a href="${yt}" target="_blank" rel="noopener noreferrer" class="youtube-btn" style="
+            display: inline-block;
+              background-color: #2563eb;
+              color: white;
+              padding: 10px 20px;
+              text-decoration: none;
+              border-radius: 6px;
+              font-weight: 600;
+              font-size: 14px;
+              box-shadow: 0 4px 6px rgba(0,0,0,0.15);
+              transition: background-color 0.2s;
+            " onmouseover="this.style.backgroundColor='#1d4ed8'" onmouseout="this.style.backgroundColor='#2563eb'">
+            Go to Full Video on YouTube 📺
+          </a>
+        </div>
+      `;
+    } else {
+      // 2. Fall back to your original embedded iframe player if no audio file exists
+      html += `
+        <div id="yt-container-${id}" style="position:relative; margin-bottom: 20px;">
+          <iframe
+            id="yt-iframe-${id}"
+            class="youtube-embed"
+            src="https://www.youtube-nocookie.com/embed/${ytId}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      `;
+    }
   }
 
   // Fallback if no preview exists (now checks for mp3 too!)
@@ -522,7 +541,10 @@
   }
 
   content.innerHTML = html;
-  if (yt && ytId) {
+  
+  // Only check for YouTube element failures if we actually rendered the iframe!
+  const hasMp3 = (mp3Id && mp3Id.trim() !== "");
+  if (yt && ytId && !hasMp3) {
     detectYouTubeFailure(id, ytId, yt);
   }
   
