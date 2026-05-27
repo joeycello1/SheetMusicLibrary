@@ -425,6 +425,15 @@
           </div>
         `;
 
+      // Audio player
+        if (item.mp3) {
+          html += `
+            <audio controls style="width: 100%; margin-top: 16px;">
+              <source src="https://drive.google.com/uc?export=download&id=${item.mp3}" type="audio/mpeg">
+            </audio>
+          `;
+        }
+      
       // PDF preview (first page only)
       if (pdf) {
         html += `
