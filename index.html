@@ -450,28 +450,26 @@
         
         // 2. The Fetch script replaces google.script.run entirely:
           fetch(`${webAppUrl}?streamMp3=${item.mp3}`)
-        .then(response => response.text()) // 1. Grab raw text first to see what it is
-        .then(text => {
-          console.log("👉 Raw response from Google Apps Script:", text);
-          
-          // 2. Try parsing it manually now that we logged it
-          const result = JSON.parse(text);
-          
-          if (result.status === "success") {
-            const player = document.getElementById("viewer-audio-player");
-            const source = document.getElementById("audio-source-element");
-            
-            if (player && source) {
-              source.src = "data:audio/mpeg;base64," + result.data;
-              player.load();
-            }
-          } else {
-            console.error("Audio stream error from backend:", result.message);
-          }
-        })
-        .catch(err => {
-          console.error("Failed to fetch audio from Apps Script:", err);
-        });
+            .then(response => response.text()) // 1. Read it as raw text, NOT JSON
+            .then(base64Data => {
+              // Check to make sure Google didn't return an error message string
+              if (base64Data && !base64Data.startsWith("Error")) {
+                const player = document.getElementById("viewer-audio-player");
+                const source = document.getElementById("audio-source-element");
+                
+                if (player && source) {
+                  // 2. Feed the raw string directly into the audio player source
+                  source.src = "data:audio/mpeg;base64," + base64Data.trim();
+                  player.load();
+                  console.log("🎵 Audio loaded successfully!");
+                }
+              } else {
+                console.error("Audio stream error from backend:", base64Data);
+              }
+            })
+            .catch(err => {
+              console.error("Failed to fetch audio from Apps Script:", err);
+            });
       }
     
       // PDF preview (first page only)
