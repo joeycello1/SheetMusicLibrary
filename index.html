@@ -433,8 +433,8 @@
         </div>
       `;
     
-      // Audio player block (Native Browser Player via Safe Apps Script Runner)
-      if (mp3Id && mp3Id.trim() !== "") {
+      // Audio player block (GitHub Pages to Apps Script Fetch Version)
+      if (item.mp3 && typeof item.mp3 === 'string' && item.mp3.trim() !== "") {
         html += `
           <div class="audio-container" style="margin-top: 15px; margin-bottom: 15px; width: 100%;">
             <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
@@ -444,25 +444,29 @@
             </audio>
           </div>
         `;
+    
+        // 1. Put your actual deployed Google Apps Script URL here:
+        const webAppUrl = "https://script.google.com/macros/s/AKfycbxL-VFweXa1M4LNkqCPleLmxk5LuaHV6JEVF7B7MVQS1xQDYhptaTHpNxe5A0r8SU27FQ/exec";
         
-        // Call the independent backend function asynchronously
-        google.script.run
-          .withSuccessHandler(function(base64Data) {
-            if (base64Data && !base64Data.startsWith("Error")) {
+        // 2. The Fetch script replaces google.script.run entirely:
+        fetch(`${webAppUrl}?streamMp3=${item.mp3}`)
+          .then(response => response.json())
+          .then(result => {
+            if (result.status === "success") {
               const player = document.getElementById("viewer-audio-player");
               const source = document.getElementById("audio-source-element");
               
-              // Stream the raw text string cleanly as a native audio source
-              source.src = "data:audio/mpeg;base64," + base64Data;
-              player.load();
+              if (player && source) {
+                source.src = "data:audio/mpeg;base64," + result.data;
+                player.load();
+              }
             } else {
-              console.error("Audio stream error from backend:", base64Data);
+              console.error("Audio stream error from backend:", result.message);
             }
           })
-          .withFailureHandler(function(err) {
-            console.error("Failed to connect to Apps Script audio runner:", err);
-          })
-          .streamMp3FromId(mp3Id); // Calls our specific function by name
+          .catch(err => {
+            console.error("Failed to fetch audio from Apps Script:", err);
+          });
       }
     
       // PDF preview (first page only)
