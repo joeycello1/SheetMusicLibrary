@@ -216,50 +216,17 @@
       // Audio player block (GitHub Pages to Apps Script Fetch Version)
       if (item.mp3 && typeof item.mp3 === 'string' && item.mp3.trim() !== "") {
         html += `
-          <div class="audio-container" style="position: relative; margin-top: 15px; margin-bottom: 15px; width: 100%;">
-            <label style="display: block; font-size: 13px; font-weight: 600; margin-bottom: 5px; color: #4b5563;">Reference Audio:</label>
-            
-            <div id="audio-loading-overlay" style="
-              position: absolute;
-              bottom: 0;
-              left: 0;
-              width: 100%;
-              height: 54px; /* Matches the approximate native height of the audio controls */
-              background: rgba(31, 41, 55, 0.9); /* Dark background to overlay nicely */
-              color: #e5e7eb;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              font-family: sans-serif;
-              font-size: 13px;
-              border-radius: 8px;
-              z-index: 10;
-              pointer-events: none;
-            ">
-              <span class="audio-spinner" style="
-                border: 3px solid rgba(255,255,255,0.1);
-                border-top: 3px solid #3b82f6; /* Modern blue spinner accent */
-                border-radius: 50%;
-                width: 16px;
-                height: 16px;
-                animation: audio-spin 1s linear infinite;
-                margin-right: 8px;
-              "></span>
-              Loading audio...
-            </div>
-
-            <audio id="viewer-audio-player" controls style="width: 100%; border-radius: 8px;">
-              <source id="audio-source-element" src="" type="audio/mpeg">
-              Your browser does not support the audio element.
-            </audio>
-
-            <style>
-              @keyframes audio-spin {
-                0% { transform: rotate(0deg); }
-                100% { transform: rotate(360deg); }
-              }
-            </style>
-          </div>
+         <div class="audio-container">
+             <label>Reference Audio:</label>
+             <div id="audio-loading-overlay">
+                 <span class="audio-spinner"></span>
+                 Loading audio...
+             </div>
+             <audio id="viewer-audio-player" controls>
+                 <source id="audio-source-element" src="" type="audio/mpeg">
+                 Your browser does not support the audio element.
+             </audio>
+         </div>
         `;
 
         // 1. Put your actual deployed Google Apps Script URL here:
