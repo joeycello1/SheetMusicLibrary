@@ -1,1 +1,419 @@
+let allData = [];
+    let folders = [];
+    let currentFolder = "";
+    let currentSearch = "";
 
+    // --- YouTube helpers ---
+    function isYouTube(url) {
+      if (!url) return false;
+      return url.includes('youtube.com') || url.includes('youtu.be');
+    }
+
+    function normalizeRecord(item) {
+      // Extract the raw ID from the network payload first
+      const fileId = item.id || item.ID || ""; 
+
+      return {
+        id: fileId,
+        title: (item.title || "Untitled").replace(/\.pdf$/i, "").replaceAll('-', ' '),
+        pdf: `https://drive.google.com/file/d/${fileId}/preview`, // 👈 Uses the clean local variable
+        folder: (item.folder || "").replace(/^Sheet Music\s*\/\s*/i, ""),
+        pages: item.pages || "",
+        youtube: item.youtube || "",
+        artist: item.artist || "",
+        mp3: item.mp3 || "",
+        tags: "" 
+      };
+    }
+
+    function buildFolderIndex(data) {
+      allData = data;
+      folders = [...new Set(data.map(item => item.folder))].sort(); // 👈 Change to lowercase 'folder'
+      renderFolderList();
+      currentFolder = "";
+      document.getElementById("musicGrid").innerHTML = "";
+      document.getElementById("loading").textContent = "Choose a folder or search.";
+    }
+
+    function renderFolderList() {
+     const select = document.getElementById("folderSelect");
+
+      select.innerHTML = `
+        <option value="">— Select a folder —</option>
+      ` + folders.map(folder => `
+        <option value="${folder}">
+        ${folder}
+      </option>
+     `).join("");
+    }
+
+    function selectFolder(folder) {
+      currentFolder = folder;
+      currentSearch = "";
+      document.getElementById("searchInput").value = "";
+
+      if (!folder) {
+        // User selected the placeholder
+        document.getElementById("musicGrid").innerHTML = "";
+        document.getElementById("loading").textContent = "Choose a folder or search.";
+        return;
+      }
+
+      loadFolder(folder);
+    }
+
+
+    function loadFolder(folder) {
+      const filtered = allData.filter(item => item.folder === folder); // item.Folder -> item.folder
+      document.getElementById("loading").style.display = "none";
+      renderLibrary(filtered);
+    }
+    
+    function applySearch() {
+      currentSearch = document.getElementById("searchInput").value.toLowerCase().trim();
+
+      // If search is empty
+      if (currentSearch === "") {
+        if (currentFolder) {
+          loadFolder(currentFolder);
+        } else {
+          document.getElementById("musicGrid").innerHTML = "";
+          document.getElementById("loading").textContent = "Choose a folder or search.";
+        }
+        return;
+      }
+
+      // 1. Exact phrase match
+      let matches = allData.filter(item => 
+        item.title.toLowerCase().includes(currentSearch) || 
+        item.artist.toLowerCase().includes(currentSearch)
+      );
+
+      // 2. If no exact phrase match, fall back to "all words must match"
+      if (matches.length === 0) {
+        const words = currentSearch.split(/\s+/);
+        matches = allData.filter(item => 
+          words.every(w => 
+            item.title.toLowerCase().includes(w) ||
+            item.artist.toLowerCase().includes(w)
+          )
+        );
+      }
+
+      // Grouping logic you already added
+      const grouped = groupByTitle(matches);
+      const sortedGroups = Object.values(grouped).sort((a, b) => a[0].title.localeCompare(b[0].title));
+      const flattened = sortedGroups.flat();
+
+      document.getElementById("loading").style.display = "none";
+      renderLibrary(flattened);
+    }
+
+
+    function groupByTitle(items) {
+      const groups = {};
+      items.forEach(item => {
+        const key = item.title.toLowerCase(); // item.Title -> item.title
+        if (!groups[key]) groups[key] = [];
+        groups[key].push(item);
+      });
+      return groups;
+    }
+    
+
+
+    // --- Render library ---
+    function renderLibrary(data) {
+      const filtered = data;
+
+      const grid = document.getElementById("musicGrid");
+      const loading = document.getElementById("loading");
+
+      if (filtered.length === 0) {
+        loading.textContent = "No music found.";
+        return;
+      }
+
+      loading.style.display = "none";
+
+      grid.innerHTML = filtered.map(item => {
+        const pdf = item.pdf || "";
+        const yt = item.youtube || "";
+        const isVideo = isYouTube(yt);
+        const title = item.title || "Untitled";
+        const artist = item.artist || "";
+        const folder = item.folder || "";
+        const pages = item.pages || "";
+
+        return `
+          <div class="card" data-id="${item.id}" onclick="openViewer('${item.id}', event)">
+            <div class="card-content">
+              <h3>${title}</h3>
+              <div class="meta">
+                ${artist ? `<h3>${artist}<br></h3>` : ""}
+                ${folder ? `category: ${folder}<br>` : ""}
+                ${pages ? `${pages} page(s)` : ""}
+              </div>
+            </div>
+          </div>`;
+      }).join("");
+    }
+
+    function openViewer(id, event) {
+      if (event) event.stopPropagation();
+    
+      const item = allData.find(x => x.id === id); // x.ID -> x.id
+      if (!item) return;
+    
+      const panel = document.getElementById("viewerPanel");
+      const content = document.getElementById("viewerContent");
+      const pdf = item.pdf;
+      const yt = item.youtube;
+      const ytId = yt ? extractYouTubeId(yt) : "";
+      const mp3Id = item.mp3; // Grabbing the mp3 field from your data object
+    
+      let html = `
+        <h2>${item.title}</h2>
+        <div class="meta">
+          ${item.artist ? `${item.artist}` : ""}
+          ${item.folder ? `|| category: ${item.folder}` : ""}
+          ${item.pages ? ` || ${item.pages} page(s) ` : ""}
+        </div>
+      `;
+    
+      // Audio player block (GitHub Pages to Apps Script Fetch Version)
+      if (item.mp3 && typeof item.mp3 === 'string' && item.mp3.trim() !== "") {
+        html += `
+         <div class="audio-container">
+             <label>Reference Audio:</label>
+             <div id="audio-loading-overlay">
+                 <span class="audio-spinner"></span>
+                 Loading audio...
+             </div>
+             <audio id="viewer-audio-player" controls>
+                 <source id="audio-source-element" src="" type="audio/mpeg">
+                 Your browser does not support the audio element.
+             </audio>
+         </div>
+        `;
+
+        // 1. Put your actual deployed Google Apps Script URL here:
+        const webAppUrl = "https://script.google.com/macros/s/AKfycbxL-VFweXa1M4LNkqCPleLmxk5LuaHV6JEVF7B7MVQS1xQDYhptaTHpNxe5A0r8SU27FQ/exec";
+        
+        // 2. The Fetch script replaces google.script.run entirely:
+        fetch(`${webAppUrl}?streamMp3=${item.mp3}`)
+          .then(response => response.text()) // 1. Read it as raw text, NOT JSON
+          .then(base64Data => {
+            const loader = document.getElementById("audio-loading-overlay");
+            
+            // Check to make sure Google didn't return an error message string
+            if (base64Data && !base64Data.startsWith("Error")) {
+              const player = document.getElementById("viewer-audio-player");
+              const source = document.getElementById("audio-source-element");
+              
+              if (player && source) {
+                // 2. Feed the raw string directly into the audio player source
+                source.src = "data:audio/mpeg;base64," + base64Data.trim();
+                player.load();
+                console.log("🎵 Audio loaded successfully!");
+              }
+              
+              // Hide loader when data is attached
+              if (loader) loader.style.display = 'none';
+              
+            } else {
+              console.error("Audio stream error from backend:", base64Data);
+              if (loader) loader.style.textContent = "Failed to load audio";
+            }
+          })
+          .catch(err => {
+            console.error("Failed to fetch audio from Apps Script:", err);
+            const loader = document.getElementById("audio-loading-overlay");
+            if (loader) loader.style.textContent = "Error fetching audio";
+          });
+      }
+    
+      // PDF preview (first page only)
+      if (pdf) {
+        html += `
+          <div class="pdf-viewport">
+            <iframe src="${pdf}"></iframe>
+          </div>
+          <div style="text-align: center; margin-top: 15px; margin-bottom: 20px;">
+            <a href="${pdf}" target="_blank" rel="noopener noreferrer" class="direct-drive-btn">
+                Open Sheet Music in New Tab ↗
+            </a>
+          </div>
+        `;
+      }
+
+  // YouTube embed (OR button workaround if MP3 audio player is present)
+  if (yt && ytId) {
+    const hasMp3 = (mp3Id && mp3Id.trim() !== "");
+
+    if (hasMp3) {
+      // 1. Render a clean button if the audio player is already taking up space
+      html += `
+        <div class="yt-button-container" style="text-align: center; margin-top: 5px; margin-bottom: 20px;">
+          <a href="${yt}" target="_blank" rel="noopener noreferrer" class="youtube-btn">
+        Go to Full Video on YouTube 📺
+          </a>
+        </div>
+      `;
+    } else {
+      // 2. Fall back to your original embedded iframe player if no audio file exists
+      html += `
+        <div id="yt-container-${id}" style="position:relative; margin-bottom: 20px;">
+          <iframe
+            id="yt-iframe-${id}"
+            class="youtube-embed"
+            src="https://www.youtube-nocookie.com/embed/${ytId}"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </div>
+      `;
+    }
+  }
+
+  // Fallback if no preview exists (now checks for mp3 too!)
+  if (!pdf && !yt && (!mp3Id || mp3Id.trim() === "")) {
+    html += `
+      <p style="margin-top: 20px; color: #ccc;">
+        No preview available for this item.
+      </p>
+    `;
+  }
+
+  content.innerHTML = html;
+  
+  // Only check for YouTube element failures if we actually rendered the iframe!
+  const hasMp3 = (mp3Id && mp3Id.trim() !== "");
+  if (yt && ytId && !hasMp3) {
+    detectYouTubeFailure(id, ytId, yt);
+  }
+  
+  panel.classList.remove("hidden");
+  panel.classList.add("visible");
+}
+
+    function detectYouTubeFailure(id, ytId, ytUrl) {
+      const iframe = document.getElementById(`yt-iframe-${id}`);
+      if (!iframe) return;
+
+      // Give YouTube time to load or fail
+      setTimeout(() => {
+        const height = iframe.clientHeight;
+
+        // Real YouTube player is usually > 200px tall
+        const looksBlocked = height < 200;
+
+        if (looksBlocked) {
+          showYouTubeFallback(id, ytId, ytUrl);
+        }
+      }, 800); // 0.8s is enough for all cases
+    }
+
+    function checkYouTubeEmbed(id, ytId, ytUrl) {
+      const iframe = document.getElementById(`yt-iframe-${id}`);
+      if (!iframe) return;
+
+      const expected = `https://www.youtube-nocookie.com/embed/${ytId}`;
+
+      // Give YouTube time to redirect if embedding is blocked
+      setTimeout(() => {
+        const actual = iframe.src;
+
+        // If the iframe was redirected → embedding is blocked
+        if (!actual.startsWith(expected)) {
+          showYouTubeFallback(id, ytId, ytUrl);
+        }
+      }, 300);
+    }
+
+    function showYouTubeFallback(id, ytId, ytUrl) {
+      const container = document.getElementById(`yt-container-${id}`);
+      if (!container) return;
+
+      const thumb = getYouTubeThumbnail(ytId);
+
+      container.innerHTML = `
+        <div style="text-align:center; margin-top: 10px;">
+          <img 
+            src="${thumb}" 
+            alt="YouTube thumbnail"
+            style="width:100%; border-radius:6px; margin-bottom:12px;"
+          />
+
+          <a 
+            href="${ytUrl}" 
+            target="_blank"
+            style="
+              display:inline-block;
+              padding:10px 16px;
+              background:#ff0000;
+              color:white;
+              border-radius:6px;
+              text-decoration:none;
+              font-weight:bold;
+            "
+          >
+            Watch on YouTube
+          </a>
+
+          <p style="color:#ccc; margin-top:8px; font-size:0.9rem;">
+            Embedding disabled by uploader
+          </p>
+        </div>
+      `;
+    }
+
+    function closeViewer() {
+      const panel = document.getElementById("viewerPanel");
+      panel.classList.remove("visible");
+      panel.classList.add("hidden");
+    }
+
+    function extractYouTubeId(url) {
+      try {
+        if (url.includes("v=")) return url.split("v=")[1].split("&")[0];
+        if (url.includes("youtu.be/")) return url.split("youtu.be/")[1].split("?")[0];
+        if (url.includes("embed/")) return url.split("embed/")[1].split("?")[0];
+      } catch (e) {}
+      return "";
+    }
+
+    // --- Call Apps Script backend ---
+    async function loadLibrary() {
+      const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxL-VFweXa1M4LNkqCPleLmxk5LuaHV6JEVF7B7MVQS1xQDYhptaTHpNxe5A0r8SU27FQ/exec";
+
+      try {
+      const response = await fetch(WEB_APP_URL);
+      const data = await response.json();
+
+      const normalized = data.map(normalizeRecord);
+      buildFolderIndex(normalized);
+
+    } catch (err) {
+      console.error("Failed to load library:", err);
+      document.getElementById("loading").textContent = "Error loading library.";
+    }
+  }
+    function getYouTubeThumbnail(id) {
+      return `https://img.youtube.com/vi/${id}/hqdefault.jpg`;
+    }
+
+    loadLibrary();
+
+    document.addEventListener("click", function (e) {
+      const panel = document.getElementById("viewerPanel");
+
+      // If panel is not open, do nothing
+      if (!panel.classList.contains("visible")) return;
+
+      // If the click is inside the panel, do nothing
+      if (panel.contains(e.target)) return;
+
+      // Otherwise, close the panel
+      closeViewer();
+    });
