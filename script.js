@@ -388,7 +388,7 @@ let allData = [];
       const WEB_APP_URL = "https://script.google.com/macros/s/AKfycbxL-VFweXa1M4LNkqCPleLmxk5LuaHV6JEVF7B7MVQS1xQDYhptaTHpNxe5A0r8SU27FQ/exec";
 
       try {
-      const response = await fetch(WEB_APP_URL);
+      const response = await fetch("data.json");
       const data = await response.json();
 
       const normalized = data.map(normalizeRecord);
