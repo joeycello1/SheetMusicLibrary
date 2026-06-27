@@ -2,7 +2,7 @@
   {
     "title": "Sonata-Cmaj-vlavlc.pdf",
     "folder": "Sheet Music / duets / vlc-vla / Albrechtsberger",
-    "modified": "2025-07-05T16:31:42.262Z",
+    "modified": "2026-06-06T17:20:10.999Z",
     "id": "1bDSj6BSjWmmKGO0Hn1brrKB0pUwKUbHZ",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=0PVY66N5kPo",
@@ -560,11 +560,11 @@
     "mp3": ""
   },
   {
-    "title": "Sonata-Op50-5-2vlc-Score.pdf",
+    "title": "Sonata-Op50-5-2vlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vlc / Boismortier",
-    "modified": "2026-06-03T18:37:19.556Z",
+    "modified": "2026-06-04T18:03:18.359Z",
     "id": "1NR_hORuuo-6Xdc-F0sDsg78WwrjY4xRR",
-    "pages": 4,
+    "pages": 26,
     "youtube": "",
     "artist": "Boismortier",
     "mp3": ""
@@ -1000,9 +1000,9 @@
     "mp3": ""
   },
   {
-    "title": "Cello-Duo-2vlc.pdf",
+    "title": "Allegro-Moderato-2vlc.pdf",
     "folder": "Sheet Music / duets / vlc-vlc / Faure",
-    "modified": "2025-07-08T15:38:10.292Z",
+    "modified": "2026-06-04T18:28:04.525Z",
     "id": "1Ddo7z_keWhqAs0awO3lsKkLuBgGnCz7_",
     "pages": 4,
     "youtube": "",
@@ -1020,21 +1020,41 @@
     "mp3": ""
   },
   {
+    "title": "Sonata-1-2vlc-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vlc / Flackton",
+    "modified": "2026-06-04T17:54:22.345Z",
+    "id": "1H7_uLAVbaTzsICr_vBXPiyYBqEf4B92l",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Sonata-2-2vlc-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vlc / Flackton",
+    "modified": "2026-06-04T17:54:50.164Z",
+    "id": "1okl8N-lJIF1c1qK2qkQiVGW58xm0-0iY",
+    "pages": 5,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Sonata-3-2vlc-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vlc / Flackton",
+    "modified": "2026-06-04T17:55:12.370Z",
+    "id": "1YmAoWhB7vaZPq-u70ydpAbyk7D1mniNA",
+    "pages": 5,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
     "title": "Sonata-7-2vlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vlc / Flackton",
     "modified": "2026-06-03T14:12:23.226Z",
     "id": "1iVrevmKekMWR6hdSqdYWhgEHtb4xwaxO",
     "pages": 4,
-    "youtube": "",
-    "artist": "Flackton",
-    "mp3": ""
-  },
-  {
-    "title": "Sonatas-1-thru-3-2vlc-score.pdf",
-    "folder": "Sheet Music / duets / vlc-vlc / Flackton",
-    "modified": "2026-06-03T14:13:12.997Z",
-    "id": "1gEsUStGAkeO_Fd0vrZr35-VLXMF-SBRb",
-    "pages": 12,
     "youtube": "",
     "artist": "Flackton",
     "mp3": ""
@@ -1685,7 +1705,7 @@
     "modified": "2025-07-22T00:31:58.000Z",
     "id": "1OnaVfQE8D8-9ZsfqZRbGZ7U_97WoUckv",
     "pages": 2,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=nTN7joGvgco",
     "artist": "Anon",
     "mp3": ""
   },
@@ -1820,6 +1840,16 @@
     "mp3": ""
   },
   {
+    "title": "Bach-Jesu-Joy-of-Mans-Desiring-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Bach",
+    "modified": "2026-06-04T19:43:06.556Z",
+    "id": "1IVP-gccHaOmlQdfAkmEe1kSXJgOXz8qx",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
     "title": "Bach-Little-Fugue-Gmin-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
     "modified": "2026-05-06T15:43:01.858Z",
@@ -1850,9 +1880,9 @@
     "mp3": ""
   },
   {
-    "title": "5-Duos-WF-Bach-vlcvln.pdf",
+    "title": "WFBach-5-Duos-vlcvln.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach, W F",
-    "modified": "2025-07-03T17:18:26.524Z",
+    "modified": "2026-06-04T20:00:29.463Z",
     "id": "1N36HEvFuzbCuho-KjcptGUYHESU8YwNE",
     "pages": 14,
     "youtube": "",
@@ -1930,9 +1960,9 @@
     "mp3": ""
   },
   {
-    "title": "Duet-No3-vlcvln.pdf",
+    "title": "Duet-No3-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Breval",
-    "modified": "2025-07-03T19:41:07.967Z",
+    "modified": "2026-06-04T19:46:19.435Z",
     "id": "1JoMh4QNeChKfp6bT15CXaFu1RnQhxuUB",
     "pages": 8,
     "youtube": "",
@@ -2050,13 +2080,63 @@
     "mp3": ""
   },
   {
-    "title": "6-Fantasias-vlnvlc.pdf",
+    "title": "Fantasia-1-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Gibbons",
-    "modified": "2026-05-06T14:50:07.794Z",
-    "id": "1o2aW_CyoDCQC8OO1fsSRy3jlJQBc99Bj",
-    "pages": 24,
+    "modified": "2026-06-04T20:08:43.281Z",
+    "id": "1-l1BlQgxcnlqcUHTbqWm3AseNuUXGv1H",
+    "pages": 4,
     "youtube": "",
-    "artist": "Gibbons",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fantasia-2-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Gibbons",
+    "modified": "2026-06-04T20:09:11.780Z",
+    "id": "1FuPotBVHINxZP_d_7g17qcvp3jMPuScC",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fantasia-3-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Gibbons",
+    "modified": "2026-06-04T20:09:38.029Z",
+    "id": "1f_cu_zIPBmkwD7FbGxZq7sHbCG4undbs",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fantasia-4-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Gibbons",
+    "modified": "2026-06-04T20:09:58.893Z",
+    "id": "12IYlrfQS_rfoddyXPhgOA9jIjHDb4z9e",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fantasia-5-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Gibbons",
+    "modified": "2026-06-04T20:10:22.663Z",
+    "id": "1rpXL8wfQ-99ghGcdcgEec8skjNvpSWvM",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fantasia-6-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Gibbons",
+    "modified": "2026-06-04T20:10:50.496Z",
+    "id": "1ggu7flpfNv9y8AkYUaQbdAlvlmmZ5p3z",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
     "mp3": ""
   },
   {
@@ -2080,13 +2160,33 @@
     "mp3": ""
   },
   {
-    "title": "3-Medium-Duos-Op125-vlnvlc.pdf",
+    "title": "Duo-1-Op125-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Lee",
-    "modified": "2025-07-07T15:23:47.842Z",
-    "id": "1JBCk3joEIZ1s38714GLZeuZJmeFjgfkY",
+    "modified": "2026-06-04T20:16:08.851Z",
+    "id": "1m7Sb3A2fpgZgw7uvDxEtxbIQXR6Fe3Y-",
+    "pages": 8,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Duo-2-Op125-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Lee",
+    "modified": "2026-06-04T20:16:46.409Z",
+    "id": "1t1zeXb0Hg7TIlcoDdxgewBhht53eOFWZ",
+    "pages": 8,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Duo-3-Op125-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Lee",
+    "modified": "2026-06-04T20:17:30.567Z",
+    "id": "1mUq__VF-tb4Ir43GRmFHyfp15pdffC29",
     "pages": 10,
     "youtube": "",
-    "artist": "Lee",
+    "artist": "",
     "mp3": ""
   },
   {
@@ -2130,59 +2230,49 @@
     "mp3": ""
   },
   {
-    "title": "Ricercata-1-vlnpart.pdf",
+    "title": "Ricercata-1-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Platti",
-    "modified": "2025-07-03T20:02:51.983Z",
-    "id": "1P4WyybZA1XdjaMZYZQKG9ZD5D0vrXHNh",
-    "pages": 6,
+    "modified": "2026-06-04T20:25:10.079Z",
+    "id": "1uP1NdE6Ec1MDchbtOvVOdyJM3ErM8svc",
+    "pages": 16,
     "youtube": "",
-    "artist": "Platti",
+    "artist": "",
     "mp3": ""
   },
   {
-    "title": "Ricercati-1-2-vlcpart.pdf",
+    "title": "Ricercata-2-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Platti",
-    "modified": "2025-07-03T20:02:13.139Z",
-    "id": "19ah2tL8uOXE4vVL5_HiMdad9riY_h30a",
+    "modified": "2026-06-04T20:26:20.651Z",
+    "id": "1ZtfNeDZkYVhkh1ydmU4RRNGOZTh-mWGI",
+    "pages": 10,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Ricercata-3-vlnvlc-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Platti",
+    "modified": "2026-06-04T20:22:14.414Z",
+    "id": "18ALv6xxxkKwJ9t_OptMknufIcpmpK-vq",
+    "pages": 5,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Ricercata-4-vlnvlc-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Platti",
+    "modified": "2026-06-04T20:22:34.665Z",
+    "id": "1EdPTaZuJwfO6-aIXF6y9mkESE_iG9XYT",
     "pages": 8,
     "youtube": "",
-    "artist": "Platti",
+    "artist": "",
     "mp3": ""
   },
   {
-    "title": "Ricercati-1-2-vlcvln-score.pdf",
-    "folder": "Sheet Music / duets / vlc-vln / Platti",
-    "modified": "2025-07-03T20:01:40.391Z",
-    "id": "1O0ruVSd0mXDicQK9yyNk1pWtuSluncVQ",
-    "pages": 12,
-    "youtube": "",
-    "artist": "Platti",
-    "mp3": ""
-  },
-  {
-    "title": "Ricercati-3-4-vlcvln-score.pdf",
-    "folder": "Sheet Music / duets / vlc-vln / Platti",
-    "modified": "2025-07-03T20:01:02.502Z",
-    "id": "1cCvubO1zFW9aGw3-9Tzidio5779__mds",
-    "pages": 13,
-    "youtube": "",
-    "artist": "Platti",
-    "mp3": ""
-  },
-  {
-    "title": "Playford-Court-Ayres-139-142-duo-vlnvlc.pdf",
+    "title": "Suite-in-Bb-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:10:42.928Z",
-    "id": "1XDtLQ7C9iLa37hYGsK3Yn5sntDBkplTS",
-    "pages": 4,
-    "youtube": "",
-    "artist": "Playford",
-    "mp3": ""
-  },
-  {
-    "title": "Playford-Court-Ayres-174-179-duo-vlnvlc.pdf",
-    "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:11:47.357Z",
+    "modified": "2026-06-04T20:32:24.756Z",
     "id": "1DvecmEySD2y5r0iEMJ0L82jUtk9QIHeK",
     "pages": 7,
     "youtube": "",
@@ -2190,9 +2280,19 @@
     "mp3": ""
   },
   {
-    "title": "Playford-Court-Ayres-196-198-duo-vlnvlc.pdf",
+    "title": "Suite-in-C-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:12:30.392Z",
+    "modified": "2026-06-04T20:31:58.414Z",
+    "id": "1XDtLQ7C9iLa37hYGsK3Yn5sntDBkplTS",
+    "pages": 4,
+    "youtube": "",
+    "artist": "Playford",
+    "mp3": ""
+  },
+  {
+    "title": "Suite-in-F-vlnvlc.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Playford",
+    "modified": "2026-06-04T20:32:47.825Z",
     "id": "1YXdm8TPTvzPYjkOuTBHMXGbETl4lho-X",
     "pages": 1,
     "youtube": "",
@@ -2200,9 +2300,9 @@
     "mp3": ""
   },
   {
-    "title": "Playford-Court-Ayres-199-201-duo-vlnvlc.pdf",
+    "title": "Suite-in-F-vlnvlc2.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:13:05.871Z",
+    "modified": "2026-06-04T20:33:13.096Z",
     "id": "1ktf33WnxywvCYFcE6vQfp74uRgjfZUtE",
     "pages": 1,
     "youtube": "",
@@ -2210,9 +2310,9 @@
     "mp3": ""
   },
   {
-    "title": "Playford-Court-Ayres-209-212-duo-vlnvlc.pdf",
+    "title": "Suite-in-F-vlnvlc3.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:13:37.956Z",
+    "modified": "2026-06-04T20:33:34.267Z",
     "id": "1HMeZhwG0XT4mMCoU1XF-D0ccz7cdZ-SI",
     "pages": 4,
     "youtube": "",
@@ -2220,9 +2320,9 @@
     "mp3": ""
   },
   {
-    "title": "Playford-Court-Ayres-36-40-duo-vlnvlc.pdf",
+    "title": "Suite-in-g-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Playford",
-    "modified": "2025-07-25T15:09:04.432Z",
+    "modified": "2026-06-04T20:31:32.663Z",
     "id": "1I6PR5a-GU2OOUS6AbpdRPr9Mevi_dsLb",
     "pages": 7,
     "youtube": "",
@@ -5164,7 +5264,7 @@
     "folder": "Sheet Music / Pop - leadsheets",
     "modified": "2026-05-06T14:00:18.720Z",
     "id": "1dQcGR3PwAhYY6PMoMPrsWKTaOP9abKPU",
-    "pages": 242,
+    "pages": 2,
     "youtube": "",
     "artist": "standards",
     "mp3": ""
@@ -5674,7 +5774,7 @@
     "folder": "Sheet Music / Pop - leadsheets",
     "modified": "2026-05-06T13:52:50.658Z",
     "id": "1G611fHnP1RM8owCvlHZ-PiSjl5tJmuPU",
-    "pages": 245,
+    "pages": 8,
     "youtube": "",
     "artist": "standards",
     "mp3": ""
@@ -8454,7 +8554,7 @@
     "folder": "Sheet Music / Pop - qrt",
     "modified": "2026-05-05T12:31:36.290Z",
     "id": "1zSfOe83zfBNSX9zx9RaojaS-6OZvN4v7",
-    "pages": 11,
+    "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=lp-EO5I60KA",
     "artist": "Ed Sheeran",
     "mp3": "1MuYTjXfqBuwg0yZfGN1eab0VrlgDVVT1"
@@ -9932,9 +10032,9 @@
   {
     "title": "Thinking-Out-Loud-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-10-13T20:02:42.082Z",
-    "id": "1EZFIn9Tw4Z15KcyjCAmcFn0esRJBMjZe",
-    "pages": 5,
+    "modified": "2025-10-13T20:03:02.579Z",
+    "id": "17BI5Q-fdkKstGGXfkhIWG9enJJlPH9Dz",
+    "pages": 9,
     "youtube": "https://www.youtube.com/watch?v=lp-EO5I60KA",
     "artist": "Ed Sheeran",
     "mp3": "1MuYTjXfqBuwg0yZfGN1eab0VrlgDVVT1"
@@ -9942,9 +10042,9 @@
   {
     "title": "Thinking-Out-Loud-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-10-13T20:03:02.579Z",
-    "id": "17BI5Q-fdkKstGGXfkhIWG9enJJlPH9Dz",
-    "pages": 9,
+    "modified": "2025-10-13T20:02:42.082Z",
+    "id": "1EZFIn9Tw4Z15KcyjCAmcFn0esRJBMjZe",
+    "pages": 5,
     "youtube": "https://www.youtube.com/watch?v=lp-EO5I60KA",
     "artist": "Ed Sheeran",
     "mp3": "1MuYTjXfqBuwg0yZfGN1eab0VrlgDVVT1"
@@ -9992,9 +10092,9 @@
   {
     "title": "Unchained-Melody-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-07-02T18:50:19.000Z",
-    "id": "1GxHb-TgwBzTmJkBg_fzZepP9Ss7BIIi0",
-    "pages": 1,
+    "modified": "2025-10-08T02:19:22.000Z",
+    "id": "1cr2ZXhxxhsKXcPeK4FpkKCGlz_SfDjEw",
+    "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=Zv8czIoAw5w",
     "artist": "Righteous Brothers",
     "mp3": ""
@@ -10002,9 +10102,9 @@
   {
     "title": "Unchained-Melody-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-10-08T02:19:22.000Z",
-    "id": "1cr2ZXhxxhsKXcPeK4FpkKCGlz_SfDjEw",
-    "pages": 3,
+    "modified": "2025-07-02T18:50:19.000Z",
+    "id": "1GxHb-TgwBzTmJkBg_fzZepP9Ss7BIIi0",
+    "pages": 1,
     "youtube": "https://www.youtube.com/watch?v=Zv8czIoAw5w",
     "artist": "Righteous Brothers",
     "mp3": ""
@@ -10082,9 +10182,9 @@
   {
     "title": "Wildest-Dreams-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-10-08T02:31:20.000Z",
-    "id": "1WyvN_A1iPY-oIBXWukts8KItg45i3TtE",
-    "pages": 2,
+    "modified": "2025-10-13T20:09:20.459Z",
+    "id": "1FlinKlIoU0lW6PrbxvIIZjgV0Ua2GYcc",
+    "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=IdneKLhsWOQ",
     "artist": "Taylor Swift",
     "mp3": ""
@@ -10102,9 +10202,9 @@
   {
     "title": "Wildest-Dreams-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2025-10-13T20:09:20.459Z",
-    "id": "1FlinKlIoU0lW6PrbxvIIZjgV0Ua2GYcc",
-    "pages": 8,
+    "modified": "2025-10-08T02:31:20.000Z",
+    "id": "1WyvN_A1iPY-oIBXWukts8KItg45i3TtE",
+    "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=IdneKLhsWOQ",
     "artist": "Taylor Swift",
     "mp3": ""
@@ -10214,7 +10314,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:02:07.435Z",
     "id": "1zn0xNpxUG7KJZo9WjdnpvQ82tEK9e_Sx",
-    "pages": "Unknown",
+    "pages": 21,
     "youtube": "https://www.youtube.com/watch?v=zp7NtW_hKJI",
     "artist": "Coldplay",
     "mp3": "1d7FVFPkawI0j5EPpP3PmQL5BPOM_P6zN"
@@ -10234,7 +10334,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:03:26.609Z",
     "id": "1n8-rXuSmSPPTVAJCDiBKgQyACtconwdl",
-    "pages": "Unknown",
+    "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=NZGHXy1IAHM",
     "artist": "Christina Perri",
     "mp3": "1HB8CHUyeZwKyoUy3cRcMl3GvivwdzfGF"
@@ -10264,7 +10364,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T13:58:15.291Z",
     "id": "1_ZxRvwfmyCI2t9moppfr-qOFcA6PsUpW",
-    "pages": "Unknown",
+    "pages": 15,
     "youtube": "https://www.youtube.com/watch?v=QfgJQUiQFes",
     "artist": "John Legend",
     "mp3": "1zoMMkHyysEtLmTMlFUAZP15TvdKEbbV-"
@@ -10664,7 +10764,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:12:28.874Z",
     "id": "16tl_bx9TvuC1Y0xPNHpaWPPwVSi0y-7-",
-    "pages": "Unknown",
+    "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=8xg3vE8Ie_E",
     "artist": "Taylor Swift",
     "mp3": "1Kb3kodYxTRn5i1Psk97BHUUEiXvc7oxl"
@@ -10784,7 +10884,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:15:06.069Z",
     "id": "1FI6AIl-gwSXwXbbbKOYRYnLWzRaWs1JT",
-    "pages": "Unknown",
+    "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=Q9z1qLbRD68",
     "artist": "Smokey Robinson",
     "mp3": "1UYbVVwVFcchY1r8LTnMVh7FxBishkB21"
@@ -10944,7 +11044,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:20:55.453Z",
     "id": "10nE1HuN9U7HloWaaj3JaqNjee4VQ22vG",
-    "pages": "Unknown",
+    "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=FX1_FXlKxXY",
     "artist": "Olivia Dean",
     "mp3": "1f92RuhXy6VRsP-g1_xAeTM-7T3IjxiV9"
@@ -11104,7 +11204,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:13:45.194Z",
     "id": "1kEjDfucsMaov52nw32nCdhjmYNh3GJ85",
-    "pages": "Unknown",
+    "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=QrJosGJj7w0",
     "artist": "Rihanna / Calvin Harris",
     "mp3": "1ZlGblo6A3oeDTbf5k_d-YQw8mYTQasKE"
@@ -11144,7 +11244,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:17:15.837Z",
     "id": "1aw5X3WOiWd0XizEAlGZMYQ5nOfJY57jI",
-    "pages": "Unknown",
+    "pages": 7,
     "youtube": "https://www.youtube.com/watch?v=6hzrDeceEKc",
     "artist": "Oasis",
     "mp3": "1-NxMraYVqq8VmaQuHTnxrH6IZ5Kna_v-"
@@ -11204,7 +11304,7 @@
     "folder": "Sheet Music / Pop - trio",
     "modified": "2026-06-05T14:16:16.550Z",
     "id": "1b9KeiFIDoppvHBO7xJgW2UAb195fCsKP",
-    "pages": "Unknown",
+    "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=ShZ978fBl6Y",
     "artist": "Calum Scott",
     "mp3": "1sSYIFO5grP2h9W6n53lSoxVhN29JVdlP"
@@ -12375,7 +12475,7 @@
     "modified": "2026-04-03T21:18:41.418Z",
     "id": "1jYYRLNKjiKhIBkgKoJbYYdr6SZMzYZ_9",
     "pages": 21,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=vn-gDWpRKSU",
     "artist": "Purcell",
     "mp3": ""
   },
@@ -12384,8 +12484,8 @@
     "folder": "Sheet Music / quartets / Purcell",
     "modified": "2026-04-03T21:18:03.978Z",
     "id": "1o5Wc33BB2TJmk2xUfdNP751yFXHUuHWC",
-    "pages": 28,
-    "youtube": "",
+    "pages": 29,
+    "youtube": "https://www.youtube.com/watch?v=BHU3kGxLvkg",
     "artist": "Purcell",
     "mp3": ""
   },
@@ -12395,7 +12495,7 @@
     "modified": "2026-04-03T21:17:59.560Z",
     "id": "1rMO0BiKz7IuZpLjEVE_E4AaHS0PxkR9W",
     "pages": 21,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=BPrDmPgFMn0",
     "artist": "Purcell",
     "mp3": ""
   },
@@ -12764,7 +12864,7 @@
     "folder": "Sheet Music / quartets / various / Sitt-Albums-1and2",
     "modified": "2026-03-23T15:10:53.000Z",
     "id": "1IrKyoG32f0r2LRyb36em22WsTgc4LLUy",
-    "pages": 13,
+    "pages": 3,
     "youtube": "",
     "artist": "various",
     "mp3": ""
@@ -12925,7 +13025,7 @@
     "modified": "2025-07-14T19:08:14.000Z",
     "id": "18YoenqWB73k_h1sRYsjjuRXLh8D2UjYS",
     "pages": 8,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=-_E877TUqfU",
     "artist": "Victoria",
     "mp3": ""
   },
@@ -12935,7 +13035,7 @@
     "modified": "2026-03-23T21:29:15.000Z",
     "id": "1oU7X6yfiMX4qnGfEHh8ArGqULTat1G_J",
     "pages": 4,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=QT5K-GxDHyM",
     "artist": "Victoria",
     "mp3": ""
   },
@@ -13920,6 +14020,66 @@
     "mp3": ""
   },
   {
+    "title": "Triosuite-1-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:39:14.477Z",
+    "id": "1xk4XFPB32eagXL_gIt-Zi-dQTZnOzaMr",
+    "pages": 12,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Triosuite-2-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:39:09.610Z",
+    "id": "1Cvklna-KB0L2DYdYSI_FXQ0ZcnsWEHNK",
+    "pages": 11,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Triosuite-3-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:36:15.108Z",
+    "id": "1qjfqlBNtaorrAzbOP2cRcePkvuyq21V0",
+    "pages": 6,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Triosuite-4-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:36:38.871Z",
+    "id": "1PK4DNv8oPMpmbuKFrqtdICSbW6wR4zim",
+    "pages": 7,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Triosuite-5-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:38:07.436Z",
+    "id": "1u-crQcMhScgCHHEkkUDq8AkdpOzPShSV",
+    "pages": 7,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Triosuite-6-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
+    "modified": "2026-06-05T20:38:29.349Z",
+    "id": "1lQU4XAUWmFXDETBx9s4vHRDsFstpfiUs",
+    "pages": 6,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
     "title": "Purcell-Oh-Solitude-trio-2vlnvlc.pdf",
     "folder": "Sheet Music / trios / vlnvlnvlc / Purcell",
     "modified": "2025-08-01T19:33:08.077Z",
@@ -14367,66 +14527,6 @@
     "pages": 19,
     "youtube": "",
     "artist": "Villa-Lobos",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-1-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:39:14.477Z",
-    "id": "1xk4XFPB32eagXL_gIt-Zi-dQTZnOzaMr",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-2-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:39:09.610Z",
-    "id": "1Cvklna-KB0L2DYdYSI_FXQ0ZcnsWEHNK",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-6-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:38:29.349Z",
-    "id": "1lQU4XAUWmFXDETBx9s4vHRDsFstpfiUs",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-5-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:38:07.436Z",
-    "id": "1u-crQcMhScgCHHEkkUDq8AkdpOzPShSV",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-4-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:36:38.871Z",
-    "id": "1PK4DNv8oPMpmbuKFrqtdICSbW6wR4zim",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Triosuite-3-2vlnvlc.pdf",
-    "folder": "Sheet Music / trios / vlnvlnvlc / Pachelbel",
-    "modified": "2026-06-05T20:36:15.108Z",
-    "id": "1qjfqlBNtaorrAzbOP2cRcePkvuyq21V0",
-    "pages": "Unknown",
-    "youtube": "",
-    "artist": "",
     "mp3": ""
   }
 ]
