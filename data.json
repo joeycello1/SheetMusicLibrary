@@ -232,7 +232,7 @@
   {
     "title": "Duet-vlcvla.pdf",
     "folder": "Sheet Music / duets / vlc-vla / Rossini",
-    "modified": "2025-07-05T16:46:03.558Z",
+    "modified": "2026-06-27T15:44:11.181Z",
     "id": "16xz447GXASTvEymxytUdn9i5_2aa8Cks",
     "pages": 10,
     "youtube": "https://www.youtube.com/watch?v=YATh2h3NEgE",
@@ -1026,7 +1026,7 @@
     "id": "1H7_uLAVbaTzsICr_vBXPiyYBqEf4B92l",
     "pages": 3,
     "youtube": "",
-    "artist": "",
+    "artist": "Flackton",
     "mp3": ""
   },
   {
@@ -1036,7 +1036,7 @@
     "id": "1okl8N-lJIF1c1qK2qkQiVGW58xm0-0iY",
     "pages": 5,
     "youtube": "",
-    "artist": "",
+    "artist": "Flackton",
     "mp3": ""
   },
   {
@@ -1046,7 +1046,7 @@
     "id": "1YmAoWhB7vaZPq-u70ydpAbyk7D1mniNA",
     "pages": 5,
     "youtube": "",
-    "artist": "",
+    "artist": "Flackton",
     "mp3": ""
   },
   {
@@ -1722,7 +1722,7 @@
   {
     "title": "Bach-2Part-Invention-1-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-05-08T17:25:31.505Z",
+    "modified": "2026-06-27T15:41:01.321Z",
     "id": "1ZwR2xw52f8Q6DByQOfZvRMTwmpLci_JG",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=ujObGbuRCfg",
@@ -1732,7 +1732,7 @@
   {
     "title": "Bach-2Part-Invention-4-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-05-08T17:37:56.397Z",
+    "modified": "2026-06-27T15:41:23.144Z",
     "id": "1B1dWkEu5RF0lIY1dW9bNJNQZBOE2qmQJ",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=m5MNgwLmqLw",
@@ -1742,7 +1742,7 @@
   {
     "title": "Bach-Aria-Goldberg-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-05-08T17:35:59.553Z",
+    "modified": "2026-06-27T15:41:50.829Z",
     "id": "1YDTUH0SGTczR1CFGTP5i5PRBNl-O39ar",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=i7Rph9OlGN0",
@@ -1832,21 +1832,11 @@
   {
     "title": "Bach-Gavotte-1-2-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-05-06T15:42:32.035Z",
+    "modified": "2026-06-27T15:42:15.247Z",
     "id": "1poC4qLAwRD2pwRrBbu5izMru2LPlspCP",
     "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=fP4QY3tCCQY",
     "artist": "Bach",
-    "mp3": ""
-  },
-  {
-    "title": "Bach-Jesu-Joy-of-Mans-Desiring-vlnvlc.pdf",
-    "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-06-04T19:43:06.556Z",
-    "id": "1IVP-gccHaOmlQdfAkmEe1kSXJgOXz8qx",
-    "pages": 2,
-    "youtube": "",
-    "artist": "",
     "mp3": ""
   },
   {
@@ -1862,10 +1852,10 @@
   {
     "title": "Bach-Sheep-May-Safely-Graze-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach",
-    "modified": "2026-05-06T15:43:29.991Z",
+    "modified": "2026-06-27T15:42:35.273Z",
     "id": "1GM8OKnGAv_-5H5tEeMCHVXI_oOKx6TcG",
     "pages": 4,
-    "youtube": "",
+    "youtube": "https://www.youtube.com/watch?v=0BMCE7XJ2H8",
     "artist": "Bach",
     "mp3": ""
   },
@@ -1876,13 +1866,23 @@
     "id": "1fPms1hjixikqeBT10ns0SkHoYGgeBhZv",
     "pages": 31,
     "youtube": "",
+    "artist": "Bach?",
+    "mp3": ""
+  },
+  {
+    "title": "Jesu-Joy-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Bach",
+    "modified": "2026-07-07T17:03:31.888Z",
+    "id": "1MogMneGFRAOWzvjkDsIXpWK1dD8tvhNX",
+    "pages": 3,
+    "youtube": "",
     "artist": "Bach",
     "mp3": ""
   },
   {
     "title": "WFBach-5-Duos-vlcvln.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Bach, W F",
-    "modified": "2026-06-04T20:00:29.463Z",
+    "modified": "2026-06-27T15:29:14.071Z",
     "id": "1N36HEvFuzbCuho-KjcptGUYHESU8YwNE",
     "pages": 14,
     "youtube": "",
@@ -1980,6 +1980,216 @@
     "mp3": ""
   },
   {
+    "title": "All-I-Want-for-Xmas-is-You-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:56:41.096Z",
+    "id": "1_UwOKKMiTSq_QOQTSWHU6D7M1vviSnSp",
+    "pages": 5,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Angels-We-Have-Heard-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:00:00.513Z",
+    "id": "1y8CWN5z1GY48NCifDOvabaXEakyYGeGb",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Ave-Maria-Schubert-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:49:41.750Z",
+    "id": "1mYmC9TABiEA5m_NIhGXLF5RkqVsM1Y_g",
+    "pages": 1,
+    "youtube": "",
+    "artist": "Schubert",
+    "mp3": ""
+  },
+  {
+    "title": "Blue-Xmas-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:55:07.877Z",
+    "id": "1QsudROy8IqbLsRZJx2YQU6ox91TXoEBu",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "First-Noel-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:59:40.297Z",
+    "id": "1pVnG90X_tHZHrmigJkGQzlgfKaMDSpH9",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Greensleeves-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:00:20.573Z",
+    "id": "10PsyT_fQSJ1Q58V8qKlDkmAgYQ27gne7",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Hark-the-Herald-Angels-Sing-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:59:20.158Z",
+    "id": "1VYWqoASc42fWfupRwJIqNzBEAD_HbEtH",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Have-Yourself-a-Merry-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:58:30.840Z",
+    "id": "1zHaiZw6YY-clkYKOcbmEOlwNp4MqRb5C",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Ill-Be-Home-for-Xmas-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:55:37.316Z",
+    "id": "11v8R0H_WaRfl-cvEZE0w25KJQ14HotpO",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Its-the-Most-Wonderful-Time-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:56:02.569Z",
+    "id": "1euiqNPJZAMJm8KMFeGt266EDMQQ5Nnx1",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Jingle-Bell-Rock-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:00:43.250Z",
+    "id": "13qWZeqldfMyhMsRchhlyvGHKafFdvQ9C",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Let-It-Snow-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:56:20.515Z",
+    "id": "1KtFFTYzWew08XpTyywQ_j0Dh0XyCEWa_",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Lo-How-a-Rose-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:02:08.130Z",
+    "id": "1spy9NAHGCBAJarjNDMeKJlbGoh7wsgqD",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "O-Come-Emmanuel-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:58:55.260Z",
+    "id": "1GQQSNWnXHtOBbGPx8vvbjVaKL7w7ysXz",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Santa-Claus-is-Coming-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:58:04.269Z",
+    "id": "1L5vni0DPIEMaSernGlQ3sIl2YSuA8j3s",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Silent-Night-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:01:04.182Z",
+    "id": "1jKhrwdgzwS41S2zgGoX1iuRhIoPTIe78",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Song-to-the-Christmas-Tree-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:01:48.236Z",
+    "id": "1Ii0iznZA2e5h3k9kH0bv0-w6Sgbv0c-b",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "What-Child-is-This-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:02:25.348Z",
+    "id": "1_rvaqvyE_LpsPSXMJNkoBQjTgC7XR1CF",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "White-Christmas-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:57:41.646Z",
+    "id": "1t8EMu-YyJ2yQmiOiDuS1iSKaLO1sv2Zm",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Winter-Wonderland-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T17:01:26.377Z",
+    "id": "1tTWSIdYn0EPLuXcK1nni9LE5RwTgjBg5",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Youre-a-Mean-One-Mr-Grinch-duo-score.pdf",
+    "folder": "Sheet Music / duets / vlc-vln / Christmas",
+    "modified": "2026-07-07T16:57:03.783Z",
+    "id": "1CAhLMHUnIdOojLQm05XLCidYKt7z0kkA",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
     "title": "Sonata-Dmin-LaFolia-Op5-No12-vlnvlc.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Corelli",
     "modified": "2025-07-05T00:39:43.000Z",
@@ -2072,7 +2282,7 @@
   {
     "title": "Faure-Sicilienne-vlnvlc-score.pdf",
     "folder": "Sheet Music / duets / vlc-vln / Faure",
-    "modified": "2026-05-08T17:28:24.901Z",
+    "modified": "2026-06-27T15:42:59.970Z",
     "id": "1ByHES7ZyKX8tIFfwa6tYrF1kxNw2xNav",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=ERbZuK2dh-Q",
@@ -2086,7 +2296,7 @@
     "id": "1-l1BlQgxcnlqcUHTbqWm3AseNuUXGv1H",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2096,7 +2306,7 @@
     "id": "1FuPotBVHINxZP_d_7g17qcvp3jMPuScC",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2106,7 +2316,7 @@
     "id": "1f_cu_zIPBmkwD7FbGxZq7sHbCG4undbs",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2116,7 +2326,7 @@
     "id": "12IYlrfQS_rfoddyXPhgOA9jIjHDb4z9e",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2126,7 +2336,7 @@
     "id": "1rpXL8wfQ-99ghGcdcgEec8skjNvpSWvM",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2136,7 +2346,7 @@
     "id": "1ggu7flpfNv9y8AkYUaQbdAlvlmmZ5p3z",
     "pages": 4,
     "youtube": "",
-    "artist": "",
+    "artist": "Gibbons",
     "mp3": ""
   },
   {
@@ -2166,7 +2376,7 @@
     "id": "1m7Sb3A2fpgZgw7uvDxEtxbIQXR6Fe3Y-",
     "pages": 8,
     "youtube": "",
-    "artist": "",
+    "artist": "Lee",
     "mp3": ""
   },
   {
@@ -2176,7 +2386,7 @@
     "id": "1t1zeXb0Hg7TIlcoDdxgewBhht53eOFWZ",
     "pages": 8,
     "youtube": "",
-    "artist": "",
+    "artist": "Lee",
     "mp3": ""
   },
   {
@@ -2186,7 +2396,7 @@
     "id": "1mUq__VF-tb4Ir43GRmFHyfp15pdffC29",
     "pages": 10,
     "youtube": "",
-    "artist": "",
+    "artist": "Lee",
     "mp3": ""
   },
   {
@@ -2236,7 +2446,7 @@
     "id": "1uP1NdE6Ec1MDchbtOvVOdyJM3ErM8svc",
     "pages": 16,
     "youtube": "",
-    "artist": "",
+    "artist": "Platti",
     "mp3": ""
   },
   {
@@ -2246,7 +2456,7 @@
     "id": "1ZtfNeDZkYVhkh1ydmU4RRNGOZTh-mWGI",
     "pages": 10,
     "youtube": "",
-    "artist": "",
+    "artist": "Platti",
     "mp3": ""
   },
   {
@@ -2256,7 +2466,7 @@
     "id": "18ALv6xxxkKwJ9t_OptMknufIcpmpK-vq",
     "pages": 5,
     "youtube": "",
-    "artist": "",
+    "artist": "Platti",
     "mp3": ""
   },
   {
@@ -2266,7 +2476,7 @@
     "id": "1EdPTaZuJwfO6-aIXF6y9mkESE_iG9XYT",
     "pages": 8,
     "youtube": "",
-    "artist": "",
+    "artist": "Platti",
     "mp3": ""
   },
   {
@@ -2802,7 +3012,7 @@
   {
     "title": "Beyond-the-Sea-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:26:00.159Z",
+    "modified": "2026-06-05T15:23:04.442Z",
     "id": "1UH_hJgWE_vi1LldHE7cT9yNZw-zIHSnx",
     "pages": 7,
     "youtube": "https://www.youtube.com/watch?v=Sq995BHejPU",
@@ -3112,7 +3322,7 @@
   {
     "title": "Dont-Stop-Believin-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2026-05-18T16:04:57.503Z",
+    "modified": "2026-06-05T15:33:37.700Z",
     "id": "1csgqKeNr1woqnv986CkfDTB9Zr8IoTqR",
     "pages": 4,
     "youtube": "https://www.youtube.com/watch?v=1k8craCGpgs",
@@ -3152,7 +3362,7 @@
   {
     "title": "Dreams-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2026-05-21T02:20:21.598Z",
+    "modified": "2026-06-05T15:39:28.171Z",
     "id": "1kMHAScgHc8z-6672gqPsGDPhAnWFeJo2",
     "pages": 9,
     "youtube": "https://www.youtube.com/watch?v=5oWyMakvQew",
@@ -3452,7 +3662,7 @@
   {
     "title": "Have-I-Told-You-Lately-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2026-05-04T16:13:17.038Z",
+    "modified": "2026-06-05T15:51:00.095Z",
     "id": "13CMC1nvz1n0RVbNWqoq6WwzG5EU_8v4y",
     "pages": 4,
     "youtube": "https://www.youtube.com/watch?v=J789GId1kaY",
@@ -3472,7 +3682,7 @@
   {
     "title": "Here-Comes-the-Sun-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:29:42.336Z",
+    "modified": "2026-06-05T13:31:11.142Z",
     "id": "1eMGlBzueHkh_RiYWlSDQ5GMJWvU1EYeA",
     "pages": 4,
     "youtube": "https://www.youtube.com/watch?v=KQetemT1sWc",
@@ -3840,9 +4050,9 @@
     "mp3": ""
   },
   {
-    "title": "La-Vie-En-Rose-duo.pdf",
+    "title": "La-Vie-En-Rose-duo-score2.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:54:52.950Z",
+    "modified": "2026-06-05T15:16:01.032Z",
     "id": "18_yC4RE1B7pcLrErNWF_cdl_vbDaoaQu",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=qPU8mENUBXk",
@@ -4172,7 +4382,7 @@
   {
     "title": "Ordinary-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2026-06-04T16:15:36.504Z",
+    "modified": "2026-06-04T16:23:37.974Z",
     "id": "1-QC24vDp3WUK58pMdytI6MINQQ-6jgAs",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=u2ah9tWTkmk",
@@ -4202,7 +4412,7 @@
   {
     "title": "Perfect-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:35:37.103Z",
+    "modified": "2026-06-05T15:06:29.213Z",
     "id": "1EuZ0smOTstEZp0CKFBNu7dow5LBL3Sza",
     "pages": 7,
     "youtube": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
@@ -4368,6 +4578,16 @@
     "youtube": "https://www.youtube.com/watch?v=FX1_FXlKxXY",
     "artist": "Olivia Dean",
     "mp3": "1f92RuhXy6VRsP-g1_xAeTM-7T3IjxiV9"
+  },
+  {
+    "title": "Somebody-To-Love-duo.pdf",
+    "folder": "Sheet Music / Pop - duo",
+    "modified": "2026-06-27T17:21:15.656Z",
+    "id": "1SZRZ2ehTrkY8XNdfstNDfLMzdPpjGIl-",
+    "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
   },
   {
     "title": "Someone-You-Loved-duo-score.pdf",
@@ -4842,7 +5062,7 @@
   {
     "title": "Wildest-Dreams-duo3.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:41:12.162Z",
+    "modified": "2026-06-05T14:47:20.651Z",
     "id": "1BLeJN-NThjbXBaHUOtTmL5L8V1PnVKdv",
     "pages": 7,
     "youtube": "https://www.youtube.com/watch?v=IdneKLhsWOQ",
@@ -5002,7 +5222,7 @@
   {
     "title": "Young-and-Beautiful-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2026-05-05T16:42:13.027Z",
+    "modified": "2026-06-05T14:40:50.610Z",
     "id": "1cIgGOOuSJzMuNL-LFl9ui_WqpBexnU94",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=o_1aF54DO60",
@@ -5092,7 +5312,7 @@
   {
     "title": "Anyone-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T17:24:05.610Z",
+    "modified": "2026-06-05T16:18:35.708Z",
     "id": "1dscYp7lK2O-pDr8Sdq82afp4Pdg3ebZ0",
     "pages": 1,
     "youtube": "https://www.youtube.com/watch?v=KIK3azN4w34",
@@ -5302,9 +5522,9 @@
   {
     "title": "Falling-Slowly-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:17:03.942Z",
+    "modified": "2026-06-05T16:21:03.115Z",
     "id": "1D4thB1UobNp1mO6f4Hx-OIRSNlRu4x9f",
-    "pages": 4,
+    "pages": 3,
     "youtube": "",
     "artist": "",
     "mp3": ""
@@ -5312,9 +5532,9 @@
   {
     "title": "Fields-of-Gold-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:17:17.458Z",
+    "modified": "2026-06-05T16:22:42.667Z",
     "id": "1D3Th1sd2QNlZi1sQ78rkXfHiYdW6B8_I",
-    "pages": 5,
+    "pages": 4,
     "youtube": "https://www.youtube.com/watch?v=KLVq0IAzh1A",
     "artist": "Sting",
     "mp3": "1eshxfXx-AeVRSPYsW56io1G3cSW_tuI4"
@@ -5342,9 +5562,9 @@
   {
     "title": "Halo-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T17:31:35.015Z",
+    "modified": "2026-06-05T16:24:44.497Z",
     "id": "1EdeHJdrxoUizshRuglw6fqqnpCUy565P",
-    "pages": 6,
+    "pages": 5,
     "youtube": "https://www.youtube.com/watch?v=pCSL48AI_Ms",
     "artist": "Beyoncé",
     "mp3": ""
@@ -5352,7 +5572,7 @@
   {
     "title": "Halo-lead2.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-05-06T14:20:06.058Z",
+    "modified": "2026-06-05T16:25:30.780Z",
     "id": "1Hmf0rFiPF7h8z8dVqXpYaJ6_jbCBCn2F",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=pCSL48AI_Ms",
@@ -5372,9 +5592,9 @@
   {
     "title": "Hotel-California-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:23:49.169Z",
+    "modified": "2026-06-05T16:26:02.604Z",
     "id": "1EczSXPsJeayblJaxMwelUrKqLpwlntZf",
-    "pages": 4,
+    "pages": 3,
     "youtube": "",
     "artist": "",
     "mp3": ""
@@ -5432,7 +5652,7 @@
   {
     "title": "Invisible-String-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-04-11T11:32:49.115Z",
+    "modified": "2026-06-05T16:34:27.073Z",
     "id": "1e6pxDOBCzhjao6W2Dw6rSTWXXeqAaDO_",
     "pages": 5,
     "youtube": "https://www.youtube.com/watch?v=OuFnpmGwg5k",
@@ -5450,20 +5670,10 @@
     "mp3": ""
   },
   {
-    "title": "Josefin’s Waltz.pdf",
+    "title": "Josefins-Waltz-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-05-06T14:21:20.737Z",
+    "modified": "2026-06-05T16:36:41.481Z",
     "id": "190CCFUp8qwB7P4z0pQwtJH5KSb3Cc2Y7",
-    "pages": 1,
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
-    "title": "Just_The_Way_You_Look_Tonight - lead.pdf",
-    "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-05-06T14:21:53.182Z",
-    "id": "1jL-XSCVp-idotrsjKbKjrts-YlOjjgc4",
     "pages": 1,
     "youtube": "",
     "artist": "",
@@ -5474,6 +5684,16 @@
     "folder": "Sheet Music / Pop - leadsheets",
     "modified": "2026-05-21T02:04:28.602Z",
     "id": "1_qixD8D9Xw3CWx-TfgVCz-cxgrB0E-nD",
+    "pages": 1,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Just-the-Way-You-Look-Tonight-lead.pdf",
+    "folder": "Sheet Music / Pop - leadsheets",
+    "modified": "2026-06-05T16:36:27.069Z",
+    "id": "1jL-XSCVp-idotrsjKbKjrts-YlOjjgc4",
     "pages": 1,
     "youtube": "",
     "artist": "",
@@ -5520,21 +5740,21 @@
     "mp3": ""
   },
   {
-    "title": "Love Story - Lead.pdf",
-    "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-05-06T14:23:31.475Z",
-    "id": "1MWEqJN3Zz0ynNmHkcz4UHhjgzg38SdZj",
-    "pages": 2,
-    "youtube": "",
-    "artist": "",
-    "mp3": ""
-  },
-  {
     "title": "Love-on-Top-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
     "modified": "2025-10-13T17:36:32.389Z",
     "id": "1DQSbJuME2r0zYeKNDunt2ytacRl3I-8I",
     "pages": 4,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Love-Story-lead.pdf",
+    "folder": "Sheet Music / Pop - leadsheets",
+    "modified": "2026-06-05T16:35:19.761Z",
+    "id": "1MWEqJN3Zz0ynNmHkcz4UHhjgzg38SdZj",
+    "pages": 2,
     "youtube": "",
     "artist": "",
     "mp3": ""
@@ -5552,9 +5772,9 @@
   {
     "title": "Make-You-Feel-My-Love-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:32:12.321Z",
+    "modified": "2026-06-05T16:27:10.953Z",
     "id": "1DmNJUqgg4lYhpy3DNHiyh1NLnvgCVyt4",
-    "pages": 3,
+    "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=QVeubNxaBsg",
     "artist": "Adele",
     "mp3": "1yotFqJi6Dmc_Q6l78VzoEB8xwX2zU__S"
@@ -5582,9 +5802,9 @@
   {
     "title": "Marry-You-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-07-02T20:44:48.171Z",
+    "modified": "2026-06-05T16:27:47.491Z",
     "id": "19AM062awqrOEit__espr6oNK2cLEeghd",
-    "pages": 4,
+    "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=dElRVQFqj-k",
     "artist": "Bruno Mars",
     "mp3": "1ctYhQi1u2_KGwiwl20t-sDAQ2RwWq-c6"
@@ -5652,9 +5872,9 @@
   {
     "title": "Perfect-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T17:40:25.190Z",
+    "modified": "2026-06-05T16:28:18.328Z",
     "id": "1fmyuRGyKRsmM2OrYBrh3c40arnH4a_9t",
-    "pages": 4,
+    "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=2Vv-BfVoq4g",
     "artist": "Ed Sheeran",
     "mp3": "1evm2nNyOWzHbpyPrGvHLaUUnGZUprFQK"
@@ -5710,10 +5930,10 @@
     "mp3": ""
   },
   {
-    "title": "Somebody To Love Lead.pdf",
+    "title": "Somebody-to-Love-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2026-05-06T14:25:54.130Z",
-    "id": "1ZX6DkBsgWGUe_jkGRSS5pTbk_YFGhBGQ",
+    "modified": "2026-06-05T16:32:53.762Z",
+    "id": "1GDndvyZfbUu0fvnmhbp5-bSSPa8cf5iD",
     "pages": 6,
     "youtube": "",
     "artist": "",
@@ -5732,9 +5952,9 @@
   {
     "title": "Stay-With-Me-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:40:29.618Z",
+    "modified": "2026-06-05T16:30:36.840Z",
     "id": "1x9bZuciQOCTCd22fpltEzHwBeuAznZh6",
-    "pages": 3,
+    "pages": 2,
     "youtube": "",
     "artist": "",
     "mp3": ""
@@ -5742,9 +5962,9 @@
   {
     "title": "Sweet-Child-o-Mine-lead.pdf",
     "folder": "Sheet Music / Pop - leadsheets",
-    "modified": "2025-10-13T20:00:46.752Z",
+    "modified": "2026-06-05T16:30:57.450Z",
     "id": "1PVrqi_zY-kN8oSr9IEJAGAB5v1NTgjoM",
-    "pages": 4,
+    "pages": 3,
     "youtube": "https://www.youtube.com/watch?v=1w7OgIMMRc4",
     "artist": "Guns N' Roses",
     "mp3": "1o50LHy42hYLSRtYFZODG2ddMlGIMXDFP"
@@ -5942,7 +6162,7 @@
   {
     "title": "Accidentally-In-Love-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-03-25T14:24:41.000Z",
+    "modified": "2026-06-05T16:54:10.547Z",
     "id": "1JRC6BpAFLBQ4UqdlwxOk4_IVZ5W93eSX",
     "pages": 14,
     "youtube": "https://www.youtube.com/watch?v=xgyT0z7-5ts",
@@ -6152,7 +6372,7 @@
   {
     "title": "Beautiful-Day-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:13:39.525Z",
+    "modified": "2026-06-04T15:40:12.899Z",
     "id": "1DUlFObtTi4pnHcRfgJbH6IZmMCrQZz-5",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=co6WMzDOh1o",
@@ -6282,7 +6502,7 @@
   {
     "title": "Bittersweet-Symphony-qrt3.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:06:08.941Z",
+    "modified": "2026-06-04T15:40:44.753Z",
     "id": "1xWZ0W63voVPKauKd1scuYQvcCnmDtCHW",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=JnRw8bXVbPI",
@@ -6492,7 +6712,7 @@
   {
     "title": "Cheek-to-Cheek-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:16:11.244Z",
+    "modified": "2026-06-04T15:41:11.150Z",
     "id": "1JgPNIRGUK2Vjyg8-f1AsaFyZ3fdbC1Rj",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=P1u2G16fq_Y",
@@ -6512,7 +6732,7 @@
   {
     "title": "Clocks-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:14:46.263Z",
+    "modified": "2026-06-04T15:41:34.844Z",
     "id": "1xL07sUzCAIg-GKZfFs1yXgqbQ-buvunH",
     "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=PFW2uSCZ0uE",
@@ -6612,7 +6832,7 @@
   {
     "title": "Despacito-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:08:40.198Z",
+    "modified": "2026-06-04T15:42:02.729Z",
     "id": "16P8MvpebyUXJcqOzTiCl4aWsv0UAL08A",
     "pages": 12,
     "youtube": "https://www.youtube.com/watch?v=t3IyUATcAbE",
@@ -6770,9 +6990,9 @@
     "mp3": "1RXqGw3r17PkWbbyfGiYLaIpGk5mcMpXs"
   },
   {
-    "title": "Feeling-Good-Nina-Simone-qrt.pdf",
+    "title": "Feeling-Good-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-05T21:05:10.646Z",
+    "modified": "2026-06-05T16:39:51.292Z",
     "id": "19oqfyOwcVYsLQocUld3LQ63JnEjUP-D3",
     "pages": 5,
     "youtube": "",
@@ -6800,9 +7020,9 @@
     "mp3": "1eshxfXx-AeVRSPYsW56io1G3cSW_tuI4"
   },
   {
-    "title": "Firework-Katy-Perry-qrt.pdf",
+    "title": "Firework-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-05T21:06:14.541Z",
+    "modified": "2026-06-05T16:40:05.705Z",
     "id": "1IHGhSY8K4bTAUMf1lco9lxWXym09_1YF",
     "pages": 8,
     "youtube": "",
@@ -7180,6 +7400,16 @@
     "mp3": ""
   },
   {
+    "title": "Here-There-and-Everywhere-qrt-score2.pdf",
+    "folder": "Sheet Music / Pop - qrt",
+    "modified": "2026-06-28T17:43:38.853Z",
+    "id": "1q2HhN3nQ0sSmnprYVglfNnK1mVtwb6eu",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
     "title": "Hey-Brother-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
     "modified": "2025-07-07T04:11:04.189Z",
@@ -7332,7 +7562,7 @@
   {
     "title": "In-My-Life-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:21:12.774Z",
+    "modified": "2026-06-04T15:42:36.472Z",
     "id": "1bJPiWorkzvVe3_vqwfnNB_G30A2LilXx",
     "pages": 4,
     "youtube": "https://www.youtube.com/watch?v=YBcdt6DsLQA",
@@ -7460,9 +7690,9 @@
     "mp3": ""
   },
   {
-    "title": "L-O-V-E-Nat-King-Cole-qrt.pdf",
+    "title": "L-O-V-E-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2025-09-25T14:55:31.000Z",
+    "modified": "2026-06-05T16:41:03.292Z",
     "id": "1ITjjvxdU0cG-zi18ExMF6o1-YMKUj6Yd",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=mW66eX1ukZc",
@@ -7470,9 +7700,9 @@
     "mp3": "1ZEM-5wBYgL-ffSb7UsQyrn-9nPfyjUl0"
   },
   {
-    "title": "L-O-V-E-Nat-King-Cole-qrt2.pdf",
+    "title": "L-O-V-E-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-25T02:46:15.644Z",
+    "modified": "2026-06-05T16:41:12.099Z",
     "id": "199XRsMYQh2R9JOOtTUU41CDf71TInwXQ",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=mW66eX1ukZc",
@@ -7542,7 +7772,7 @@
   {
     "title": "Let-It-Be-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:12:27.741Z",
+    "modified": "2026-06-04T15:43:06.552Z",
     "id": "1E9uv1_TR4v9dy4e7m5Asz5od3IoJmpH0",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=QDYfEBY9NM4",
@@ -7550,9 +7780,9 @@
     "mp3": "1Qo-XlylIbBqaEFolfci7AIu8xS1mZRVu"
   },
   {
-    "title": "Lets-Do-It-Cole-Porter-qrt.pdf",
+    "title": "Lets-Do-It-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2025-07-03T14:16:32.000Z",
+    "modified": "2026-06-05T16:40:40.155Z",
     "id": "1HxqJOCFGnXTsquof6hLBY058YsjSTYuB",
     "pages": 8,
     "youtube": "",
@@ -7580,9 +7810,9 @@
     "mp3": ""
   },
   {
-    "title": "Linger-The-Cranberries-qrt.pdf",
+    "title": "Linger-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2025-09-25T14:55:01.000Z",
+    "modified": "2026-06-05T16:40:50.643Z",
     "id": "1CgFckJYXMTmptdekMhSzR4NQ7MdF7KmR",
     "pages": 8,
     "youtube": "",
@@ -7600,9 +7830,9 @@
     "mp3": ""
   },
   {
-    "title": "Loch_Lomond_Quartet.pdf",
+    "title": "Loch-Lomond-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2025-07-19T21:00:37.000Z",
+    "modified": "2026-06-05T17:13:55.737Z",
     "id": "1V7nsLk9YMuB772O-Q3E__jU1H0340Lak",
     "pages": 1,
     "youtube": "",
@@ -7832,7 +8062,7 @@
   {
     "title": "Mr-Brightside-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:20:01.111Z",
+    "modified": "2026-06-05T16:48:51.078Z",
     "id": "1ajZm5iE0Wibeo9yuXKXoLHFFKdY3A-EN",
     "pages": 10,
     "youtube": "",
@@ -7842,7 +8072,7 @@
   {
     "title": "Muse-Starlight-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:07:39.532Z",
+    "modified": "2026-06-04T15:47:31.476Z",
     "id": "1CgfPBr4pixl3hGMx3FI-O8SPEtgJfpoq",
     "pages": 8,
     "youtube": "",
@@ -7952,7 +8182,7 @@
   {
     "title": "Paint-It-Black-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-28T16:13:00.415Z",
+    "modified": "2026-06-05T16:52:20.500Z",
     "id": "1fUUVRw4hXbu8nX9qwfU7qZNb7tUGUwDP",
     "pages": 15,
     "youtube": "",
@@ -8052,7 +8282,7 @@
   {
     "title": "Ragtime-Dance-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2025-07-07T04:30:08.373Z",
+    "modified": "2026-06-05T16:50:00.065Z",
     "id": "1-q7eb3ZJmWWb_s80omLttlr_DKtS9z_g",
     "pages": 8,
     "youtube": "",
@@ -8150,9 +8380,9 @@
     "mp3": ""
   },
   {
-    "title": "Secrets - One Republic SET.pdf",
+    "title": "Secrets-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-05T12:20:14.960Z",
+    "modified": "2026-06-05T16:42:46.352Z",
     "id": "1XwiRA32oJo-p_VJdK1l5h-wS9a4QAM_B",
     "pages": 9,
     "youtube": "",
@@ -8210,9 +8440,9 @@
     "mp3": ""
   },
   {
-    "title": "Shes-Got-a-Way-Piano-Man-qrt.pdf",
+    "title": "Shes-Got-a-Way-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-05T21:30:30.614Z",
+    "modified": "2026-06-05T16:42:59.708Z",
     "id": "1ry4PCMB2Qp6ROxgYpekxs8eHHi5BSHXe",
     "pages": 12,
     "youtube": "",
@@ -8442,7 +8672,7 @@
   {
     "title": "Sweet-Dreams-are-Made-of-This-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:33:12.758Z",
+    "modified": "2026-06-04T15:44:28.709Z",
     "id": "1MPIvXbFK1y2P_pYzVYttjwXs46gQW0ss",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=qeMFqkcPYcg",
@@ -8470,9 +8700,9 @@
     "mp3": ""
   },
   {
-    "title": "Thank U, Next.pdf",
+    "title": "Thank-U-Next-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-05T12:28:54.172Z",
+    "modified": "2026-06-05T17:09:15.321Z",
     "id": "1VPOrZuea_sGXsy-nbqDzfy42RnWf8oCh",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=EEhZAHZQyf4",
@@ -8872,7 +9102,7 @@
   {
     "title": "With-or-Without-You-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:01:50.703Z",
+    "modified": "2026-06-04T15:45:02.545Z",
     "id": "1zAk3vEF1ZwsJ3NpH_34CdltEpAuZIDsk",
     "pages": 9,
     "youtube": "https://www.youtube.com/watch?v=6Q2mFw4VYBo",
@@ -8892,7 +9122,7 @@
   {
     "title": "Wonderful-Tonight-qrt2.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:17:19.363Z",
+    "modified": "2026-06-04T15:45:36.714Z",
     "id": "1MyinYWcyrnUwpRXUnjY1Td8vf8m3IPbB",
     "pages": 5,
     "youtube": "https://www.youtube.com/watch?v=xl7Hd2r0LOs",
@@ -8922,7 +9152,7 @@
   {
     "title": "XO-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:18:24.217Z",
+    "modified": "2026-06-04T15:46:06.790Z",
     "id": "1w7suGy_liaiL6kyldSToj2v3U3Eha7Ar",
     "pages": 4,
     "youtube": "",
@@ -8982,7 +9212,7 @@
   {
     "title": "You-Are-the-Best-Thing-qrt.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-06-04T15:11:14.448Z",
+    "modified": "2026-06-04T15:46:46.808Z",
     "id": "1fxUFIgwGAhLArYC2s6hdA6gAuQKXUgFz",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=pkntWssHboY",
@@ -9252,7 +9482,7 @@
   {
     "title": "Dream-a-Little-Dream-score2.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2026-02-23T15:33:38.732Z",
+    "modified": "2026-06-04T17:44:41.493Z",
     "id": "14sEgPVUJ35a4bysnTG08IpAJwLXzIsqq",
     "pages": 1,
     "youtube": "https://www.youtube.com/watch?v=fJwjLYRPxJY",
@@ -10762,7 +10992,7 @@
   {
     "title": "Love-Story-trio.pdf",
     "folder": "Sheet Music / Pop - trio",
-    "modified": "2026-06-05T14:12:28.874Z",
+    "modified": "2026-06-27T15:30:01.742Z",
     "id": "16tl_bx9TvuC1Y0xPNHpaWPPwVSi0y-7-",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=8xg3vE8Ie_E",
@@ -10882,7 +11112,7 @@
   {
     "title": "My-Girl-trio.pdf",
     "folder": "Sheet Music / Pop - trio",
-    "modified": "2026-06-05T14:15:06.069Z",
+    "modified": "2026-06-27T15:30:41.343Z",
     "id": "1FI6AIl-gwSXwXbbbKOYRYnLWzRaWs1JT",
     "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=Q9z1qLbRD68",
@@ -11202,7 +11432,7 @@
   {
     "title": "We-Found-Love-trio.pdf",
     "folder": "Sheet Music / Pop - trio",
-    "modified": "2026-06-05T14:13:45.194Z",
+    "modified": "2026-06-27T15:31:09.884Z",
     "id": "1kEjDfucsMaov52nw32nCdhjmYNh3GJ85",
     "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=QrJosGJj7w0",
@@ -12800,6 +13030,16 @@
     "mp3": ""
   },
   {
+    "title": "Londonderry-Air-qrt.pdf",
+    "folder": "Sheet Music / quartets / Traditional",
+    "modified": "2026-07-06T17:20:15.912Z",
+    "id": "1VNebg77SRFNatCB-5R6bcW1G5CeEEfoy",
+    "pages": 12,
+    "youtube": "",
+    "artist": "traditional",
+    "mp3": ""
+  },
+  {
     "title": "Music for 4 - vln2.pdf",
     "folder": "Sheet Music / quartets / various",
     "modified": "2025-07-06T17:48:51.223Z",
@@ -13040,11 +13280,41 @@
     "mp3": ""
   },
   {
+    "title": "Concerto-4-Rustica-qrt.pdf",
+    "folder": "Sheet Music / quartets / Vivaldi",
+    "modified": "2026-06-29T11:58:45.481Z",
+    "id": "1sT19wieQ-kOBNetouPyY5A2QE78cp-qN",
+    "pages": 8,
+    "youtube": "",
+    "artist": "Vivaldi",
+    "mp3": ""
+  },
+  {
     "title": "Concerto-dmin-RV565-qrt.pdf",
     "folder": "Sheet Music / quartets / Vivaldi",
-    "modified": "2026-06-28T18:09:50.274Z",
+    "modified": "2026-06-28T18:47:05.499Z",
     "id": "1bW47ApnASF0RWwfVop0d_E4ec00D4NYN",
     "pages": 16,
+    "youtube": "",
+    "artist": "Vivaldi",
+    "mp3": ""
+  },
+  {
+    "title": "Concerto-Madrigalesco-qrt.pdf",
+    "folder": "Sheet Music / quartets / Vivaldi",
+    "modified": "2026-06-29T12:13:16.809Z",
+    "id": "1Pif3ha2lG9sT6ez24aw2RqXNc6C8CgBW",
+    "pages": 8,
+    "youtube": "",
+    "artist": "Vivaldi",
+    "mp3": ""
+  },
+  {
+    "title": "Concerto-RV133-qrt.pdf",
+    "folder": "Sheet Music / quartets / Vivaldi",
+    "modified": "2026-06-29T12:18:38.366Z",
+    "id": "14oVxBuMxGDfIB6Hm6GOm9OYf2OLdwl-3",
+    "pages": 12,
     "youtube": "",
     "artist": "Vivaldi",
     "mp3": ""
@@ -13450,6 +13720,16 @@
     "mp3": ""
   },
   {
+    "title": "Trio-Sonata-HWV403-trio-vlnvlavlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlavlc / Handel",
+    "modified": "2026-07-07T14:53:14.638Z",
+    "id": "1z0rqvZtjtiLqhTq6Vo8DZ4duWqdv-aSq",
+    "pages": 27,
+    "youtube": "",
+    "artist": "Handel",
+    "mp3": ""
+  },
+  {
     "title": "Divertimento-1-vlnvlavlc.pdf",
     "folder": "Sheet Music / trios / vlnvlavlc / Haydn",
     "modified": "2026-06-05T18:23:20.276Z",
@@ -13700,6 +13980,16 @@
     "mp3": ""
   },
   {
+    "title": "Trio-Sonata-Amaj-no9-trio-vlnvlavlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlavlc / Vivaldi",
+    "modified": "2026-07-07T14:49:13.220Z",
+    "id": "11LvoEw2hEsg8XYRufrxARISVEoh1syAI",
+    "pages": 12,
+    "youtube": "",
+    "artist": "Vivaldi",
+    "mp3": ""
+  },
+  {
     "title": "Sonata-Amin-trio-2vlcvln.pdf",
     "folder": "Sheet Music / trios / vlnvlcvlc / Boismortier",
     "modified": "2025-07-04T17:21:49.000Z",
@@ -13717,6 +14007,26 @@
     "pages": 16,
     "youtube": "",
     "artist": "Boismortier",
+    "mp3": ""
+  },
+  {
+    "title": "Trio-Sonata-Amin-op1-no6-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Albinoni",
+    "modified": "2026-07-07T14:18:41.080Z",
+    "id": "1o5AJbyne26ia5ObnP59eYNtz31mg35nN",
+    "pages": 15,
+    "youtube": "",
+    "artist": "Albinoni",
+    "mp3": ""
+  },
+  {
+    "title": "Trio-Sonata-op1-no3-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Albinoni",
+    "modified": "2026-07-07T14:21:58.893Z",
+    "id": "1XC1IkiNRGa_ElO6z08J6o1GEeCbhFOU3",
+    "pages": 17,
+    "youtube": "",
+    "artist": "Albinoni",
     "mp3": ""
   },
   {
@@ -14020,6 +14330,26 @@
     "mp3": ""
   },
   {
+    "title": "Trio-Sonata-HWV396-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Handel",
+    "modified": "2026-07-07T14:24:58.292Z",
+    "id": "1btxW4kaS8X5KgwTIuU6ND6QlrmvB-reM",
+    "pages": 16,
+    "youtube": "",
+    "artist": "Handel",
+    "mp3": ""
+  },
+  {
+    "title": "Trio-Sonata-HWV403-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Handel",
+    "modified": "2026-07-07T14:55:40.899Z",
+    "id": "18hIXMcXsepotPLGWwrYI-fBUC-Pbatqt",
+    "pages": 27,
+    "youtube": "",
+    "artist": "Handel",
+    "mp3": ""
+  },
+  {
     "title": "Baryton-Trio-1-vlnvlnvlc.pdf",
     "folder": "Sheet Music / trios / vlnvlnvlc / Haydn",
     "modified": "2025-07-04T20:00:42.000Z",
@@ -14040,6 +14370,16 @@
     "mp3": ""
   },
   {
+    "title": "Trio-Sonata-Amaj-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Molter",
+    "modified": "2026-07-07T14:40:58.814Z",
+    "id": "1SNKcH7rzot1lluBfcEB7VRrQbc1F9cgi",
+    "pages": 6,
+    "youtube": "",
+    "artist": "Molter",
+    "mp3": ""
+  },
+  {
     "title": "6-Nocturnes-trio-vlnvlnvlc.pdf",
     "folder": "Sheet Music / trios / vlnvlnvlc / Mozart",
     "modified": "2025-07-04T20:14:21.000Z",
@@ -14056,7 +14396,7 @@
     "id": "1xk4XFPB32eagXL_gIt-Zi-dQTZnOzaMr",
     "pages": 12,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14066,7 +14406,7 @@
     "id": "1Cvklna-KB0L2DYdYSI_FXQ0ZcnsWEHNK",
     "pages": 11,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14076,7 +14416,7 @@
     "id": "1qjfqlBNtaorrAzbOP2cRcePkvuyq21V0",
     "pages": 6,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14086,7 +14426,7 @@
     "id": "1PK4DNv8oPMpmbuKFrqtdICSbW6wR4zim",
     "pages": 7,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14096,7 +14436,7 @@
     "id": "1u-crQcMhScgCHHEkkUDq8AkdpOzPShSV",
     "pages": 7,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14106,7 +14446,7 @@
     "id": "1lQU4XAUWmFXDETBx9s4vHRDsFstpfiUs",
     "pages": 6,
     "youtube": "",
-    "artist": "",
+    "artist": "Pachelbel",
     "mp3": ""
   },
   {
@@ -14260,6 +14600,16 @@
     "mp3": ""
   },
   {
+    "title": "Trio-Sonata-Amaj-no9-trio-2vlnvlc.pdf",
+    "folder": "Sheet Music / trios / vlnvlnvlc / Vivaldi",
+    "modified": "2026-07-07T14:46:49.634Z",
+    "id": "1o56tb05-Gh6bPFwMFUTKo3ctZqcLfo36",
+    "pages": 12,
+    "youtube": "",
+    "artist": "Vivaldi",
+    "mp3": ""
+  },
+  {
     "title": "Vivaldi-ConcertoVioladAmore-RV386-trio-score.pdf",
     "folder": "Sheet Music / trios / vlnvlnvlc / Vivaldi",
     "modified": "2026-03-23T15:33:10.000Z",
@@ -14270,13 +14620,23 @@
     "mp3": ""
   },
   {
-    "title": "Coventry_Carol_-trio.pdf",
+    "title": "Coventry-Carol-trio-score.pdf",
     "folder": "Sheet Music / trios / Xmas",
-    "modified": "2025-07-19T21:22:03.960Z",
+    "modified": "2026-07-07T16:48:38.502Z",
     "id": "1I0lT0N6Zo3dSNTmww6vdjQaOlx6n0WfP",
     "pages": 3,
     "youtube": "",
-    "artist": "holiday",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "O-Come-Emmanuel-trio-score.pdf",
+    "folder": "Sheet Music / trios / Xmas",
+    "modified": "2026-07-07T16:54:29.423Z",
+    "id": "1SeYBDaTNHX9Bhe5rbnFI0-hcQce9lzHw",
+    "pages": 2,
+    "youtube": "",
+    "artist": "",
     "mp3": ""
   },
   {
