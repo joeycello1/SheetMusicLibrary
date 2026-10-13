@@ -564,7 +564,7 @@
     "folder": "Sheet Music / duets / vlc-vlc / Boismortier",
     "modified": "2026-06-04T18:03:18.359Z",
     "id": "1NR_hORuuo-6Xdc-F0sDsg78WwrjY4xRR",
-    "pages": 26,
+    "pages": 4,
     "youtube": "",
     "artist": "Boismortier",
     "mp3": ""
@@ -4962,7 +4962,7 @@
   {
     "title": "Until-I-Found-You-duo.pdf",
     "folder": "Sheet Music / Pop - duo",
-    "modified": "2025-07-07T02:40:13.229Z",
+    "modified": "2026-10-12T21:51:09.744Z",
     "id": "1W1vzHrwwOEdrBsQ8UqWpKqyPnMMEWBmg",
     "pages": 6,
     "youtube": "https://www.youtube.com/watch?v=GxldQ9eX2wo",
@@ -8982,7 +8982,7 @@
   {
     "title": "Viva-La-Vida-qrt3.pdf",
     "folder": "Sheet Music / Pop - qrt",
-    "modified": "2026-05-21T17:00:27.088Z",
+    "modified": "2026-10-08T14:52:02.236Z",
     "id": "14A1DrsOIw_jWi0SJjWeyH_HzP5VGAHeH",
     "pages": 8,
     "youtube": "https://www.youtube.com/watch?v=dvgZkm1xWPE",
@@ -9360,9 +9360,9 @@
     "mp3": "1IaKRzcaGxFbfVlUYszFWNpOfAEfc-Cia"
   },
   {
-    "title": "Angel-score1.pdf",
+    "title": "Angel-score.pdf",
     "folder": "Sheet Music / Pop - scores",
-    "modified": "2026-05-21T17:31:41.529Z",
+    "modified": "2026-10-07T13:54:42.584Z",
     "id": "1pFVFUe8hvfpAqRxpaF6189aaYj6bnhWZ",
     "pages": 2,
     "youtube": "https://www.youtube.com/watch?v=QfRFFLiJvIo",
@@ -14927,6 +14927,126 @@
     "pages": 19,
     "youtube": "",
     "artist": "Villa-Lobos",
+    "mp3": ""
+  },
+  {
+    "title": "Clair-de-Lune-trio.pdf",
+    "folder": "Sheet Music / trios / vlnvlavlc / Debussy",
+    "modified": "2026-09-09T19:49:42.336Z",
+    "id": "13mUdUh2g_42K6HqOJfrTUwXq1crQPgX6",
+    "pages": 12,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Clair-de-Lune-trio.pdf",
+    "folder": "Sheet Music / trios / vlnvlavlc / Debussy",
+    "modified": "2026-09-09T19:49:42.336Z",
+    "id": "13mUdUh2g_42K6HqOJfrTUwXq1crQPgX6",
+    "pages": 12,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Romantic-Flight-trio-score.pdf",
+    "folder": "Sheet Music / Pop - trio",
+    "modified": "2026-09-09T19:49:08.522Z",
+    "id": "1DT1Cz3ov6UU7KDAKGQ04s8ht949qg75x",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "I-Wont-Say-score.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-09-09T19:49:24.833Z",
+    "id": "1LLS3DxQU9yIQp-iKXvt9L19aHqIpnMgs",
+    "pages": 5,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Fletcher-2-Fiddle-Tunes-qrt.pdf",
+    "folder": "Sheet Music / quartets / Fletcher",
+    "modified": "2026-07-09T16:19:13.645Z",
+    "id": "1D8pBtTEX7dQR7QpMqHZNJwjfI2Xs9Yvc",
+    "pages": 28,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "American-Pie-duo-score.pdf",
+    "folder": "Sheet Music / Pop - duo",
+    "modified": "2026-08-30T16:42:01.237Z",
+    "id": "1UpmCnF_oL4HkTRo0V6-BszWC1FeIEck_",
+    "pages": "Unknown",
+    "youtube": "",
+    "artist": "Don McClean",
+    "mp3": ""
+  },
+  {
+    "title": "Question-score.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-10-12T19:20:53.186Z",
+    "id": "1YDbL-oCEoIPUm2sciTpr5LCloEUE6mG6",
+    "pages": "Unknown",
+    "youtube": "https://www.youtube.com/watch?v=ENBv2i88g6Y",
+    "artist": "System of a Down",
+    "mp3": ""
+  },
+  {
+    "title": "Lonely-Day-score.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-10-12T14:04:05.179Z",
+    "id": "1NlA_U1xlPqyqhzk__ehnFjOrdmn7HtiP",
+    "pages": "Unknown",
+    "youtube": "https://www.youtube.com/watch?v=DnGdoEa1tPg",
+    "artist": "System of a Down",
+    "mp3": ""
+  },
+  {
+    "title": "Dive-score.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-10-07T13:55:59.048Z",
+    "id": "1l485y9m_wzy5cFcquz0LSlxyRDO6POm1",
+    "pages": 8,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Be-By-You-score.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-10-07T13:55:19.041Z",
+    "id": "185wQI5E5jjbvrVTksSmwTf3TK_YZZ5ra",
+    "pages": 7,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Angel-score2.pdf",
+    "folder": "Sheet Music / Pop - scores",
+    "modified": "2026-10-07T13:55:00.232Z",
+    "id": "1BdOYn40xRQ1VxiZCtNyXw29Zj5v6zQcE",
+    "pages": 3,
+    "youtube": "",
+    "artist": "",
+    "mp3": ""
+  },
+  {
+    "title": "Better-Together-qrt.pdf",
+    "folder": "Sheet Music / Pop - qrt",
+    "modified": "2026-10-07T13:54:16.801Z",
+    "id": "1-vC5Jbh-lM4lGNvK9WCFkBFTs3H6w_nD",
+    "pages": 15,
+    "youtube": "",
+    "artist": "",
     "mp3": ""
   }
 ]
